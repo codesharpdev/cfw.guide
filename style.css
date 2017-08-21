@@ -19,7 +19,7 @@ img {display: block; max-width: 100%; height: auto; width: auto\9;}
 
 .rcorners {color: #fff !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   
 *[class=wrapto100pc] {width:100%!important; height:auto !important;}
 
