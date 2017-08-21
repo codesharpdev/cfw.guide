@@ -47,11 +47,17 @@ h6 {
 }
 p {
 	color: #E5E9F0
+}
+p {
 	font-family: "Segoe UI"
 }
+
 .table {
 	padding: 5px;
 	border-collapse: collapse;
 	border: 1px solid #E5E9F0;
 	color: #E5E9F0
+}
+.table {
+	font-family: "Segoe UI"
 }
