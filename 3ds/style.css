@@ -15,7 +15,7 @@ body {margin-left: 5em; margin-right: 5em; background-color: #2E3440; color: #D8
 
 .warning {padding: 10px 20px; background-color: #7e4d57; border-radius: 5px;}
 
-footer {position:fixed; bottom:0; margin-left:-3em !important;}
+footer {position:fixed; bottom:0; margin-left:-3.5em !important;}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
