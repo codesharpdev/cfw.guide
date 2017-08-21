@@ -23,49 +23,20 @@ h1 {
 	color: #E5E9F0;
 	background-color: #3B4252;
 	padding: 10px;
-	font: "Segoe UI"
+	font-family: "Segoe UI", Verdana, Arial
 }
-h2 {
+h2, h3, h4, h5, h6, p, li {
+	font-family: "Segoe UI", Verdana, Arial
+}
+h2, h3, h4, h5, h6, p, li {
 	color: #E5E9F0
 }
-h2 {
-	font: "Segoe UI"
-}
-h3 {
-	color: #E5E9F0
-}
-h3 {
-	font: "Segoe UI"
-}
-h4 {
-	color: #E5E9F0
-}
-h4 {
-	font: "Segoe UI"
-}
-h5 {
-	color: #E5E9F0
-}
-h5 {
-	font: "Segoe UI"
-}
-h6 {
-	color: #E5E9F0
-}
-h6 {
-	font: "Segoe UI"
-}
-p {
-	color: #E5E9F0
-}
-p {
-	font: "Segoe UI"
-}
-li {
-	color: #E5E9F0
-}
-li {
-	font: "Segoe UI"
+
+rbubble {
+	color: #E5E9F0;
+	background-color: #3B4252;
+	padding: 10px;
+	font-family: "Segoe UI", Verdana, Arial
 }
 
 .table {
