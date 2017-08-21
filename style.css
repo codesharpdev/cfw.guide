@@ -1,41 +1,29 @@
-a:link {
+a:link, a:visited {
 	text-decoration: none;
 	color: #7694b8
 }
-a:visited {
-	text-decoration: none;
-	color: #7694b8
-}
-a:hover {
+a:hover, a:active {
 	text-decoration: underline;
 	color: #7694b8
-}
-a:active {
-	text-decoration: underline;
-	color: #7694b8
-}
-
-body {
-	background-color: #2E3440
 }
 
 h1 {
-	margin-left: 1em;
-	margin-right: 1em;
-	color: #E5E9F0;
 	background-color: #3B4252;
 	padding: 10px;
+	color: #E5E9F0;
 	font-family: "Segoe UI", Verdana, Arial
 }
-h2, h3, h4, h5, h6, p, li, .table {
-	margin-left: 5em;
-	margin-right: 5em;
-	font-family: "Segoe UI", Verdana, Arial;
-	color: #E5E9F0
+
+.header {
+	margin-left:-1.5em !important;
 }
 
-.bindent {
-	text-indent: 1em
+body {
+	margin-left: 5em;
+	margin-right: 5em;
+	background-color: #2E3440;
+	color: #E5E9F0;
+	font-family: "Segoe UI", Verdana, Arial
 }
 
 .table {
