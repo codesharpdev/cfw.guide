@@ -7,29 +7,35 @@ a:hover, a:active {
 	color: #7694b8
 }
 
-h1 {
+.header {
 	background-color: #3B4252;
 	padding: 10px;
-	color: #E5E9F0;
-	font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif
+	color: #D8DEE9;
+	font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 
-.header {
+/*.header {
 	margin-left:-1.5em !important;
+}*/
+
+.nomargin {
+	margin-left:-5em !important;
+	margin-right:-5em !important;
 }
 
 body {
 	margin-left: 5em;
 	margin-right: 5em;
 	background-color: #2E3440;
-	color: #E5E9F0;
-	font-family: "Segoe UI", Verdana, Arial
+	color: #D8DEE9;
+	font-family: "Segoe UI", Verdana, Arial;
 }
 
 .table {
 	padding: 5px;
 	border-collapse: collapse;
-	border: 1px solid #E5E9F0;
+	border: 1px solid #D8DEE9;
+	font-size: 100%
 }
 
 .section div {
@@ -40,4 +46,29 @@ body {
 footer {
     position:fixed;
     bottom:0;
+	margin-left:-3em !important;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.rcorners1 {
+    border-radius: 10px;
+    border: 2px solid #D8DEE9;
+    padding: 20px; 
+    width: 87px;
+    height: 22px; 
 }
