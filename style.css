@@ -20,31 +20,26 @@ body {
 }
 
 h1 {
+	margin-left: 1em;
+	margin-right: 1em;
 	color: #E5E9F0;
 	background-color: #3B4252;
 	padding: 10px;
 	font-family: "Segoe UI", Verdana, Arial
 }
-h2, h3, h4, h5, h6, p, li {
-	font-family: "Segoe UI", Verdana, Arial
-}
-h2, h3, h4, h5, h6, p, li {
+h2, h3, h4, h5, h6, p, li, .table {
+	margin-left: 5em;
+	margin-right: 5em;
+	font-family: "Segoe UI", Verdana, Arial;
 	color: #E5E9F0
 }
 
-rbubble {
-	color: #E5E9F0;
-	background-color: #3B4252;
-	padding: 10px;
-	font-family: "Segoe UI", Verdana, Arial
+.bindent {
+	text-indent: 1em
 }
 
 .table {
 	padding: 5px;
 	border-collapse: collapse;
 	border: 1px solid #E5E9F0;
-	color: #E5E9F0
-}
-.table {
-	font-family: "Segoe UI"
 }
