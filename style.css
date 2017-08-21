@@ -1,0 +1,57 @@
+a:link {
+	text-decoration: none;
+	color: #7694b8
+}
+a:visited {
+	text-decoration: none;
+	color: #7694b8
+}
+a:hover {
+	text-decoration: underline;
+	color: #7694b8
+}
+a:active {
+	text-decoration: underline;
+	color: #7694b8
+}
+
+body {
+	background-color: #2E3440
+}
+
+h1 {
+	color: #E5E9F0;
+	background-color: #3B4252;
+	padding: 10px;
+	font-family: "Segoe UI"
+}
+h2 {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+h3 {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+h4 {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+h5 {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+h6 {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+p {
+	color: #E5E9F0
+	font-family: "Segoe UI"
+}
+.table {
+	padding: 5px;
+	border-collapse: collapse;
+	border: 1px solid #E5E9F0;
+	color: #E5E9F0
+}
