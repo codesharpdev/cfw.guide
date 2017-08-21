@@ -31,3 +31,8 @@ body {
 	border-collapse: collapse;
 	border: 1px solid #E5E9F0;
 }
+
+.section div {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
