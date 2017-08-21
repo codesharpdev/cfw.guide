@@ -1,7 +1,7 @@
-a:link, a:visited {text-decoration: none; color: #7694b8}
-a:hover, a:active {text-decoration: underline; color: #7694b8}
+a:link, a:visited {text-decoration: none; font-weight: bold; color: #7694b8}
+a:hover, a:active {text-decoration: underline; font-weight: bold; color: #7694b8}
 
-.header {background-color: #3B4252; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
+.header {border-radius: 5px; background-color: #3B4252; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
 
 .nomargin {margin-left:-5em !important; margin-right:-5em !important;}
 
@@ -9,7 +9,9 @@ body {margin-left: 5em; margin-right: 5em; background-color: #2E3440; color: #D8
 
 .table {padding: 5px; border-collapse: collapse; border: 1px solid #D8DEE9;}
 
-.section div {padding: 10px 20px;border: 1px solid #ddd;}
+.quote {padding: 10px 20px; background-color: #3B4252;}
+
+.warning {padding: 10px 20px; background-color: #7e4d57; border-radius: 5px;}
 
 footer {position:fixed; bottom:0; margin-left:-3em !important;}
 
@@ -31,4 +33,12 @@ img {display: block; max-width: 100%; height: auto; width: auto\9;}
 
 *[class=themoney] {display: block!important; float:none!important;}
 
+}
+
+#div1 {
+    display: inline-block;
+}
+
+#div2 {
+    display: inline-block;
 }
