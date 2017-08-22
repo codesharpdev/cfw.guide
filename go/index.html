@@ -1,7 +1,16 @@
-<head>
-</head>
-<body>
-	<script type="text/javascript">
+<html>
+    <head>
+    </head>
+    <body>
+		<div id="text"></div>
+		<script type="text/javascript">
+		-->Browser detection code by Relys
+		browserInfo = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+		browserInfo+= "<p>Browser Name: " + navigator.appName + "</p>";
+		browserInfo+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+		browserInfo+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+		browserInfo+= "<p>Platform: " + navigator.platform + "</p>";
+		browserInfo+= "<p>User-agent header: " + navigator.userAgent + "</p>";
 		-->Get platform and version number
 		platform = String(navigator.platform);
 		var version = navigator.appVersion;
@@ -15,69 +24,97 @@
 			{
 				-->Store the exact browser version to a string
 				versionNumber=versionRE[1];
-				-->See if browser is for Wii U version 5.4.0
-				if(versionNumber == "3.0.4.2.9")
+				-->See if browser is for Wii U version 5.5.1
+				if(versionNumber == "3.0.4.2.12")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.5.1";
+					window.location = "payload.php?sysver=550";
+				}
+				-->See if browser is for Wii U version 5.5.0
+				else if(versionNumber == "3.0.4.2.11")
+				{
+					-->Display message and redirect to payload URL
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.5.0";
+					window.location = "payload.php?sysver=550";
+				}
+				-->See if browser is for Wii U version 5.4.0
+				else if(versionNumber == "3.0.4.2.9")
+				{
+					-->Display message and redirect to payload URL
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.4.0";
+					window.location = "payload.php?sysver=540";
 				}
 				-->See if browser is for Wii U version 5.3.2
 				else if(versionNumber == "3.0.3.12.15")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.3.2";
+					window.location = "payload532.html";
 				}
 				-->See if browser is for Wii U version 5.0.0 or 5.1.0
 				else if (versionNumber == "3.0.3.12.12")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.0.0 or 5.1.0";
+					window.location = "payload500.html";
 				}
 				-->See if browser is for Wii U version 4.1.0
 				else if (versionNumber == "3.0.3.12.11")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 4.1.0";
+					window.location = "payload410.html";
 				}
 				-->See if browser is for Wii U version 4.0.0
 				else if (versionNumber == "3.0.3.12.6")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 4.0.0";
+					window.location = "payload400.html";
 				}
-				-->See if browser is for Wii U version 5.5.0
-				else if (versionNumber == "3.0.4.2.11")
+				-->See if browser is for Wii U version 3.0.0 or 3.1.0
+				else if (versionNumber == "2.1.0.10.9")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 3.0.0 or 3.1.0";
+					var check = new XMLHttpRequest();
+					check.open('HEAD', "payload310.html", false);
+					check.send();
+					if (check.status != 404)
+						window.location = "payload310.html";
+					else
+						window.location = "payload300.html";
 				}
-				-->See if browser is for Wii U version 5.5.1
-				else if (versionNumber == "3.0.4.2.12")
+				-->See if browser is for Wii U version 2.1.0
+				else if (versionNumber == "2.1.0.8.23")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 2.1.0";
+					window.location = "payload210.html";
 				}
-				else if (versionNumber == "3.0.4.2.13")
+				-->See if browser is for Wii U version 2.0.0
+				else if (versionNumber == "2.1.0.8.21")
 				{
 					-->Display message and redirect to payload URL
-					window.location = "errorno551";
-				}
-				else
-				{
-					-->Display message and redirect to payload URL
-					window.location = "errorno551";
+					document.getElementById("text").innerHTML="Detected Wii U Firmware version 2.0.0";
+					window.location = "payload200.html";
 				}
 			}
 			-->If we couldn't parse the browser version, throw an error message
 			else
 			{
 				window.location = "errornoversion";
+				/* document.getElementById("text").innerHTML="Unsupported Wii U Browser: "+browserInfo; */
 			}
 		}
 		-->If we couldn't detect the Wii U browser, throw an error message.
 		else
 		{
 			window.location = "errornowiiu";
+			/* document.getElementById("text").innerHTML="Unsupported Operating System: "+browserInfo; */
 		}
 </script>
-</body>
+    </body>
+</html>
+
