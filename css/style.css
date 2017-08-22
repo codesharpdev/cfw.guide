@@ -35,6 +35,10 @@ img {display: block; max-width: 100%; height: auto; width: auto\9;}
 *[class=themoney] {display: block!important; float:none!important;}
 }
 
+div:hover {
+	opacity: 1.0 !important;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
