@@ -1,0 +1,54 @@
+a:link, a:visited {text-decoration: none; font-weight: bold; color: #7694b8}
+a:hover, a:active {text-decoration: underline; font-weight: bold; color: #7694b8}
+
+.header {border-radius: 5px; background-color: #3B4252; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
+
+.darkheader {border-radius: 5px; background-color: #2E3440; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
+
+.nomargin {margin-left:-5em !important; margin-right:-5em !important;}
+
+body {margin-left: 5em; margin-right: 5em; background-color: #2E3440; color: #D8DEE9; font-family: "Segoe UI", Verdana, Arial;}
+
+.table {padding: 5px; border-collapse: collapse; border: 1px solid #D8DEE9;}
+
+.quote {border-radius: 5px; padding: 10px 20px; background-color: #3B4252;}
+
+.warning {padding: 10px 20px; background-color: #7e4d57; border-radius: 5px;}
+
+footer {position:fixed; bottom:0; margin-left:-3.5em !important;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+img {display: block; max-width: 100%; height: auto; width: auto\9;}
+
+.rcorners {color: #fff !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
+
+.dsbg {border-radius: 10px; background-color: #6e806a; background-position: left top; background-repeat: repeat; padding: 20px;}
+.vitabg {border-radius: 10px; background-color: #7e4d57; background-position: left top; background-repeat: repeat; padding: 20px;}
+.guidebg {border-radius: 10px; background-color: #87625a; background-position: left top; background-repeat: repeat; padding: 20px;}
+
+@media only screen and (max-width: 1024px) {
+*[class=wrapto100pc] {width:100%!important; height:auto !important;}
+*[class=hide] {display:none!important; width:0px !important;}
+*[class=show] {width:100%!important; height:auto!important;display:table!important;}
+*[class=me] {display:block!important; width:100%!important; max-height:inherit!important; overflow:visible!important;}
+*[class=themoney] {display: block!important; float:none!important;}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.forcecenter {
+	text-align: center !important;
+}
