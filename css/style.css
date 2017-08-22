@@ -10,7 +10,9 @@ a:hover, a:active {text-decoration: underline; font-weight: bold; color: #7694b8
 
 body {margin-left: 5em; margin-right: 5em; background-color: #2E3440; color: #D8DEE9; font-family: "Segoe UI", Verdana, Arial;}
 
-.table {padding: 5px; border-collapse: collapse; border: 1px solid #D8DEE9;}
+table, th, td, tr {padding: 5px; border-collapse: collapse; border: 1px solid #D8DEE9;}
+
+th {background-color: #3B4252;}
 
 .quote {border-radius: 5px; padding: 10px 20px; background-color: #3B4252;}
 
