@@ -1,0 +1,83 @@
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		-->Get platform and version number
+		platform = String(navigator.platform);
+		var version = navigator.appVersion;
+		-->Check to see if we're running on a Wii U
+		if(platform == "Nintendo WiiU")
+		{
+			-->If we are then parse out the exact browser version
+			var versionRE = version.match("NX\/(.*) NintendoBrowser\/");
+			-->Ensure we were able to get browser version
+			if(versionRE.length==2)
+			{
+				-->Store the exact browser version to a string
+				versionNumber=versionRE[1];
+				-->See if browser is for Wii U version 5.4.0
+				if(versionNumber == "3.0.4.2.9")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 5.3.2
+				else if(versionNumber == "3.0.3.12.15")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 5.0.0 or 5.1.0
+				else if (versionNumber == "3.0.3.12.12")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 4.1.0
+				else if (versionNumber == "3.0.3.12.11")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 4.0.0
+				else if (versionNumber == "3.0.3.12.6")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 5.5.0
+				else if (versionNumber == "3.0.4.2.11")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				-->See if browser is for Wii U version 5.5.1
+				else if (versionNumber == "3.0.4.2.12")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "551hbl.mp4";
+				}
+				else if (versionNumber == "3.0.4.2.13")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+				else
+				{
+					-->Display message and redirect to payload URL
+					window.location = "errorno551";
+				}
+			}
+			-->If we couldn't parse the browser version, throw an error message
+			else
+			{
+				window.location = "errornoversion";
+			}
+		}
+		-->If we couldn't detect the Wii U browser, throw an error message.
+		else
+		{
+			window.location = "errornowiiu";
+		}
+</script>
+</body>
