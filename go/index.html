@@ -24,12 +24,19 @@
 			{
 				-->Store the exact browser version to a string
 				versionNumber=versionRE[1];
+				-->See if browser is for Wii U version 5.5.2
+				if (versionNumber == "3.0.4.2.13")
+				{
+					-->Display message and redirect to payload URL
+					window.location = "payload552.html";
+				}
+
 				-->See if browser is for Wii U version 5.5.1
-				if(versionNumber == "3.0.4.2.12")
+				else if(versionNumber == "3.0.4.2.12")
 				{
 					-->Display message and redirect to payload URL
 					document.getElementById("text").innerHTML="Detected Wii U Firmware version 5.5.1";
-					window.location = "payload.php?sysver=550";
+					window.location = "551.mp4";
 				}
 				-->See if browser is for Wii U version 5.5.0
 				else if(versionNumber == "3.0.4.2.11")
