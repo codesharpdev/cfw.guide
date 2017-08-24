@@ -33,7 +33,7 @@ html, body { height: 100%; }
 .greenbg {border-radius: 10px; background-color: #6e806a; background-position: left top; background-repeat: repeat; padding: 20px;}
 .redbg {border-radius: 10px; background-color: #7e4d57; background-position: left top; background-repeat: repeat; padding: 20px;}
 .orangebg {border-radius: 10px; background-color: #87625a; background-position: left top; background-repeat: repeat; padding: 20px;}
-.cyanbg {border-radius: 10px; background-color: #60818f; background-position: left top; background-repeat: repeat; padding: 20px;}485e7b
+.cyanbg {border-radius: 10px; background-color: #60818f; background-position: left top; background-repeat: repeat; padding: 20px;}
 .bluebg {border-radius: 10px; background-color: #485e7b; background-position: left top; background-repeat: repeat; padding: 20px;}
 
 @media only screen and (max-width: 1024px) {
