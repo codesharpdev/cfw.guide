@@ -1,9 +1,9 @@
 a:link, a:visited {text-decoration: none; font-weight: bold; color: #7694b8}
 a:hover, a:active {text-decoration: underline; font-weight: bold; color: #7694b8}
 
-.header {border-radius: 5px; background-color: #3B4252; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
+.header {border-radius: 5px; background-color: #3B4252; padding: 10px; color: #D8DEE9 !important; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
 
-.darkheader {border-radius: 5px; background-color: #2E3440; padding: 10px; color: #D8DEE9; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
+.darkheader {border-radius: 5px; background-color: #2E3440; padding: 10px; color: #D8DEE9 !important; font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;}
 
 .nomargin {margin-left:-5em !important; margin-right:-5em !important;}
 .mobilemargin {margin-left:-4em !important; margin-right:-4em !important;}
@@ -25,7 +25,9 @@ hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 
 
 img {display: block; max-width: 100%; height: auto; width: auto;}
 
-.rcorners {color: #fff !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
+thing {}
+
+.rcorners {color: #D8DEE9 !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
 
 .greybg {border-radius: 10px; background-color: #3B4252; background-position: left top; background-repeat: repeat; padding: 20px;}
 .greenbg {border-radius: 10px; background-color: #6e806a; background-position: left top; background-repeat: repeat; padding: 20px;}
@@ -33,6 +35,7 @@ img {display: block; max-width: 100%; height: auto; width: auto;}
 .orangebg {border-radius: 10px; background-color: #87625a; background-position: left top; background-repeat: repeat; padding: 20px;}
 .cyanbg {border-radius: 10px; background-color: #60818f; background-position: left top; background-repeat: repeat; padding: 20px;}
 .bluebg {border-radius: 10px; background-color: #485e7b; background-position: left top; background-repeat: repeat; padding: 20px;}
+.purplebg {border-radius: 10px; background-color: #5B487B; background-position: left top; background-repeat: repeat; padding: 20px;}
 
 @media only screen and (max-width: 1024px) {
 *[class=wrapto100pc] {width:100%!important; height:auto !important;}

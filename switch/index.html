@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SwitchHax Guide</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1 class="header" align="left">
+		<a href="../switch" style="color:#E5E9F0;">
+			Switch Guide
+		</a>
+	</h1>
+	
+	<div class="greenbg" align="centre" style="padding:10px";>
+		<h1 align="center">
+			SwitchHax Guide
+		</h1>
+		<p align="center">
+			<font size = "+2">
+				Coming Soon
+			</font>
+		</p>
+		<p align="center" style="padding:20px";>
+			<a href="./" class="rcorners">
+				<b>
+					Not available yet
+				</b>
+			</a>
+		</p>
+	</div>
+	<h2>
+		What firmwares can I install Homebrew on?
+	</h2>
+	<hr/>
+	<p>
+		<font size = "+1">
+			Currently, none. No homebrew has been released yet.
+			<br>
+			There has, however, been a <b>major exploit announced in the Switch firmware 3.0.0:</b> smhax.
+			<br>
+			<a href="https://gbatemp.net/threads/huge-exploit-found-on-firmware-3-0-0-smhax.481208/page-3#post-7521310">SciresM has confirmed</a> that this exploit will work on all firmware versions below 3.0.0 too, including <b>1.0.0, 2.0.0, 2.1.0, 2.2.0, and 2.3.0.</b>
+		</font>
+	</p>
+	<h2>
+		What is smhax?
+	</h2>
+	<hr/>
+	<p>
+		<font size = "+1">
+			<b>smhax</b> is most likely one of the biggest vulnerabilities found in the Switch firmware, and will probably be the main access to homebrew for a while.
+			<br>
+			Nintendo have since patched smhax in Switch firmware 3.0.1, so it's heavily advised <b>not to update!</b>
+		</font>
+	</p>
+	<p>
+		<font size = "+1">
+			<b>smhax</b>, when fully exploited, will allow privilege escalation which will allow us to register and run arbitrary services on the console. Read more here
+			<blockquote class="header">
+				Prior to 3.0.1, the service manager (sm) built-in system module treats a user as though it has full permissions if the user creates a new “sm:” port session but bypasses initialization. This is due to the other sm commands skipping the service ACL check for Pids <= 7 (i.e. all kernel bundled modules) and that skipping the initialization command leaves the Pid field uninitialized. Successful exploitation results in Acquisition, registering, and unregistering of arbitrary services
+			</blockquote>
+			When a homebrew entrypoint is released, this would likely be used to gain full access to the console.
+		</font>
+	</p>
+	<h2>Help! I'm on 3.0.1! Can I downgrade?</h2>
+	<hr/>
+	<font size = "+1">
+		<p>
+			Unfortunately, with the Switch, it has become extremely hard to downgrade. Nintendo have learned from their mistakes and introduced a new security measure: eFuses.
+		</p>
+		<p>
+			<b>What's an "eFuse"?</b>
+			<p style="padding-left:30px">An eFuse is a tiny element inside the CPU which can be "burnt" to permanently change the state of the CPU. For example, whenever you upgrade your Switch firmware, one of these eFuses is burnt. When you updated to 3.0.1, another of these eFuses burnt.
+			<br>
+			Because of this, if you tried to downgrade the console to 3.0.0, the console would notice that an extra eFuse is burnt than normal, meaning it knows it's previously been on higher firmware, and if too many eFuses are burnt, the bootloader will panic immediately and cease all other actions.</p>
+			<b>Can't we just do a downgrade with a hardmod?</b>
+			<p style="padding-left:30px">I'm afraid not, as the bootloader would still notice that too many eFuses have been burnt, and begin to panic.</p>
+			<b>Does this mean we'll never be able to downgrade on the Switch?</b>
+			<p style="padding-left:30px">Not necessarily. While it may be impossible to downgrade at this point in time, in the future with more advanced exploits, this may be possible. However, for now, you'll just have to wait on 3.0.1 for another exploit.</p>
+		</p>
+	</font>
+<footer><h2><a href="../" style="color:#E5E9F0;">🏠</a></h2></footer>
+</body>
+</html>
