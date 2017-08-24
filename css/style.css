@@ -27,6 +27,8 @@ img {display: block; max-width: 100%; height: auto; width: auto;}
 
 .rcorners {color: #fff !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
 
+html, body { height: 100%; }
+
 .greybg {border-radius: 10px; background-color: #3B4252; background-position: left top; background-repeat: repeat; padding: 20px;}
 .greenbg {border-radius: 10px; background-color: #6e806a; background-position: left top; background-repeat: repeat; padding: 20px;}
 .redbg {border-radius: 10px; background-color: #7e4d57; background-position: left top; background-repeat: repeat; padding: 20px;}
