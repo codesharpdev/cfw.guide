@@ -32,9 +32,11 @@
 	<li>Select your microSD and click "Write"</li>
 	<li>Take out your microSD card and put it back in again</li>
 	<li>Format your disk from Windows</li>
-	<ul><li>File System: exFAT</li>
-	<li>Allocation Unit Size: Default Allocation Size</li>
-	<li>Do not put a volume lable</li></ul>
+	<ul>
+		<li>File System: exFAT</li>
+		<li>Allocation Unit Size: Default Allocation Size</li>
+		<li>Do not put a volume lable</li>
+	</ul>
 	<li>Copy the backup you made earlier to the SD Card</li>
 	<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
 	</ol>
@@ -46,15 +48,17 @@
 	</ol>
 <h3>Linux Instructions</h3>
 	<ol>
-	<li>Find the whole-device node (usually /dev/sd?, /dev/rdisk?, /dev/mmcblk? or some variant on the theme - check out the documentation of your OS, and be especially careful to use the correct disk!) The "mount" command may be of help.</li>
-	<li>Make sure to unmount all partitions, but not eject the disk</li>
-	<li>Use the dd command to write zzBlank to the card (dd if=/path/to/zzBlank.img of=/dev/what-you-found-above)</li>
-	<li>Eject and reinsert the card</li>
-	<li>Create a new MBR partition table, an exFAT partition, and format that partition</li>
+	<li>Find the whole-device node (usually /dev/sdX, /dev/rdiskX, /dev/mmcblkX or some variant on the theme - check out the documentation of your OS, and be especially careful to use the correct disk!)</li>
+	<ul>
+		<li>The "mount" command may be of help.</li>
+	</ul>
+	<li>Unmount all partitions, but don't eject the disk</li>
+	<li>Use the dd command to write zzBlank to the card (<b>dd if=/path/to/zzBlank.img of=/dev/what-you-found-above</b>)</li>
+	<li>Take out the microSD card and put it back in again</li>
+	<li>Create a new MBR (msdos) partition table, an exFAT partition, and format that partition</li>
 	<li>Copy the backup you made earlier to the SD Card</li>
 	<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
 	</ol>
-<p>Thanks to GBAtemp User <a href="http://gbatemp.net/members/361367/">Ryccardo</a> for providing steps for Mac and Linux.</p>
 <h2>Help</h2>
 	<p><b>Q: My SD2Vita adapter is stuck in my Vita! How do I get it out?</b><br>A: Use a toothpick or another thin object to gently pry it out.</p>
 	<p><b>Q: My SD2Vita adapter keeps popping out of my Vita! How do I get it in?</b><br>A: Apply a small bit of tape to the side of the adapter. This will give it the extra thickness it needs to stay in.</p>
