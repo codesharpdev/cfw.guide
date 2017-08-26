@@ -25,7 +25,16 @@ hr {display: block; height: 1px; border: 0; border-top: 1px solid #D8DEE9; margi
 
 img {display: block; max-width: 100%; height: auto; width: auto;}
 
-thing {}
+#wrapper {
+	font-size: 70%;
+	overflow: hidden;
+}
+#first {
+	float:left;
+}
+#second {
+	float:left;
+}
 
 .rcorners {color: #D8DEE9 !important; border-radius: 10px; border: 2px solid #D8DEE9; padding: 7px; background-color: #3B4252;}
 
