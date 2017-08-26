@@ -21,7 +21,7 @@ body {margin-left: 5%; margin-right: 5%; background-color: #2E3440; color: #D8DE
 
 footer {position:fixed; bottom:0; margin-left:-3.5em !important;}
 
-hr {display: block; height: 1px; border: 0; border-top: 1px solid #D8DEE9; margin: 1em 0; padding: 0;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #D8DEE9; margin: 1em 0; padding: 0; width:50%}
 
 img {display: block; max-width: 100%; height: auto; width: auto;}
 
