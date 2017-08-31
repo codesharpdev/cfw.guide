@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WiiUHax Guide</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+<body class="guide">
+	<div id="wrapper">
+	<div id="first">
+	<h1 class="header" style="border-radius: 10px 0px 0px 10px">
+		<div align="left">
+			<a href="./" style="color:#E5E9F0;">
+				WiiU Guide
+			</a>
+		</div>
+	</h1>
+	</div>
+	<div id="second">
+	<h1 class="header" style="border-radius: 0px;">
+		<div align="left">
+			<a href="blocking-updates" style="color:#E5E9F0;font-weight:normal !important">
+				Blocking Updates
+			</a>
+		</div>
+	</h1>
+	</div>
+	<div id="second">
+	<h1 class="header" style="border-radius: 0px 10px 10px 0px;">
+		<div align="left">
+			<a href="https://discord.gg/zMQd5qz" target="_blank" style="color:#E5E9F0;font-weight:normal !important">
+				Help!
+			</a>
+		</div>
+	</h1>
+	</div>
+	</div>
+	<h2>
+		Updating to 5.5.1 (Hax)
+	</h2>
+	<p>
+		Well, this is <i>technically</i> an update to 5.5.2, but I named it this not to confuse people.
+		<br>
+		In reality it just updates to 5.5.2 but keeps the 5.5.1 browser exploit, so you can easily launch Homebrew.
+	</p>
+	<p>
+		You will need to use <a href="files/nnupatcher.zip">nnu-patcher</a> to use eShop/update applications, and you'll need to make sure you're <a href="blocking-updates">blocking updates</a> to make sure that everything goes well.
+	<p>
+	<h2>
+		Preparations
+	</h2>
+	<ul>
+		<li>Download <a href="https://java.com/en/" target="_blank">Java</a> if you haven't already</li>
+		<li>Download <a href="files/OSTitleDownloaer.jar">OSTitleDownloader</a></li>
+		<li>Download <a href="files/wupinstaller-noblacklist.zip">WUPInstaller (No blacklist)</a></li>
+		<li>Download the Wii U common.key</li>
+		<ul>
+			<li>I cannot link it here, as it is against copyright law</li>
+		</ul>
+		<li>Download your correct region and firmware title list</li>
+	</ul>
+	<table class="table">
+  <colgroup>
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="table" style="text-align: center">EUR</th>
+      <th class="table" style="text-align: center">USA</th>
+      <th class="table" style="text-align: center">JAP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/EUR/5.5.0/LIST.txt">5.5.0</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/USA/5.5.0/LIST.txt">5.5.0</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/JAP/5.5.0/LIST.txt">5.5.0</a></td>
+    </tr>
+    <tr>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/EUR/5.4.0/LIST.txt">5.4.0</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/USA/5.4.0/LIST.txt">5.4.0</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/JAP/5.4.0/LIST.txt">5.4.0</a></td>
+    </tr>
+    <tr>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/EUR/5.3.2/LIST.txt">5.3.2</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/USA/5.3.2/LIST.txt">5.3.2</a></td>
+      <td class="table" style="text-align: center; font-weight: bold;"><a href="files/JAP/5.3.2/LIST.txt">5.3.2</a></td>
+    </tr>
+  </tbody>
+</table>
+	<h3 class="warning">
+		WARNING: This next part could potentially brick your Wii U if you do not follow the instructions correctly.
+		<br>
+		Make sure to read all instructions through before proceeding.
+		<br>
+		I will not take responsibility for any damage done to your system.
+	</h3>
+	<h2>
+		Instructions
+	</h2>
+	<ol>
+		<li>
+			Install Java if you haven't already
+		</li>
+		<li>
+			Put <b>OSTitleDownloader.jar</b>, <b>LIST.txt</b> and <b>common.key</b> into the same directory
+		</li>
+		<li>
+			Open a terminal/command prompt in that directory and type <b>java -jar titledownloader.jar -l LIST.txt</b>
+		</li>
+		<li>
+			Once it's finished, copy the <b>install</b> folder to root of your SD Card
+		</li>
+		<li>
+			Extract the contents of <b>wupinstall-noblacklist.zip</b> to the root of your SD card
+		</li>
+		<li>
+			Run the Homebrew Launcher by typing in <a href="http://cfw.guide/go" target="_blank">cfw.guide/go</a> into the URL bar
+		</li>
+		<ul>
+			<li>
+				Alternatively use <a href="http://loadiine.ovh" target="_blank">loadiine.ovh</a>
+			</li>
+		</ul>
+		<li>
+			Run <b>WUPInstaller - No Blacklist</b>
+		</li>
+		<li>
+			Install all titles <b>EXCEPT</b> OSv10 (000500101000400A) to NAND
+		</li>
+		<li>
+			<b>Now</b>, you can install OSv10 (000500101000400A) to NAND
+		</li>
+		<li>
+			The console will freeze. Reboot
+		</li>
+	</ol>
+	<p>Your Wii U should now be on 5.5.2 with a 5.5.1 browser.</p>
+	<p>You will be able to go online in games, however to use the eShop and to update games, you must use <a href="files/nnupatcher.zip">nnu-patcher</a><br>It is also highly recommended that you now <a href="blocking-updates">block system updates</a></p>
+	<p>Proceed to <b><a href="mocha">Installing Mocha</a></b></p>
+	<footer>
+		<h2>
+			<a href="http://cfw.guide/" style="color:#E5E9F0;">
+				🏠
+			</a>
+		</h2>
+	</footer>
+</body>
+</html>
