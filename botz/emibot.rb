@@ -1891,8 +1891,6 @@ bot.command([:f,:F]) do |event|
 	end
   end
 end
-  
-bot.run
 
 bot.command :baka do |event|
 	bakaa = rand(10) + 1
@@ -1900,3 +1898,5 @@ bot.command :baka do |event|
 	bakac = rand(3) + 1
 	event.respond("b#{"a" * bakaa}k#{"a" * bakab}#{"!" * bakac}")
 end
+  
+bot.run
