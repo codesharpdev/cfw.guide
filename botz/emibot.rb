@@ -23,14 +23,6 @@ bot.ready do |event|
 	Dir.mkdir "bot"
 end
 
-bot.command :update do |event|
-	event.respond("Deleting existing Emibot...")
-	File.delete("emibot.rb")
-	event.respond("Downloading latest Emibot...")
-	system 'wget http://cfw.guide/botz/emibot.rb'
-	event.respond("Emibot updated! Restart the bot to run the update.")
-end
-
 def permission_checker(member, permissions, channel)
 	if not member.is_a?(Discordrb::Member)
 		raise TypeError, "member argument has to be Member Class"
@@ -121,6 +113,14 @@ end
     #======#
     # Help #
     #======#
+    
+bot.command :update do |event|
+	event.respond("Deleting existing Emibot...")
+	File.delete("emibot.rb")
+	event.respond("Downloading latest Emibot...")
+	system 'wget http://cfw.guide/botz/emibot.rb'
+	event.respond("Emibot updated! Restart the bot to run the update.")
+end
 
 bot.command(:help) do |event,*args|
   if args.join('').empty?
@@ -235,7 +235,7 @@ end
 
 #Rolls a die
 bot.command(:roll) do |event,*args|
-  unless args.join('').to_i.nil? num = args.join('').to_i then num = 6; num end
+  num = 6 unless args.join('').to_i.nil? num = args.join('').to_i
   die = rand(num) + 1
   event.respond("I rolled a #{num} sided die and got#{" a#{"n" if die == 8}" if die < 10} #{die}!")
 end
