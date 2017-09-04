@@ -62,42 +62,69 @@
 	</div>
 	</div>
 <h2>Installing Adrenaline</h2>
-	<p>This step will install Adrenaline on your Vita, so you can play PSP and PS1 Games & Homebrew</p>
-	<h4 class="warning">
-		Adrenaline requires an activated Vita to install.
+	<p>
+		This step will install Adrenaline on your Vita, so you can play PSP and PS1 Games & Homebrew
 		<br>
-		If you do not have an activated Vita, you cannot install Adrenaline unless you have a legit PSP/PS Mini game installed.
-	</h4>
+		Adrenaline no longer requires activation, so you can install it on any device
+		<br>
+		If you installed Adrenaline previously, you must uninstall it before updating to Adrenaline v6
+	</p>
 <h3>Instructions</h3>
 	<ol>
-	<li>Open the Homebrew Browser App</li>
-	<li>Select "Utilities" at the top</li>
-	<li>Scroll down to "Adrenaline EasyInstaller"</li>
-	<li>Select it and install the application</li>
+		<li>Open the Homebrew Browser App</li>
+		<li>Scroll down to <b>Adrenaline</b> by <b>TheFloW</b></li>
+		<li>Select it and install the application</li>
 		<ul>
-			<li><a href="https://github.com/Freakler/vita-AdrenalineEasyInstaller/releases/download/v1.15/AdrenalineEasyInstaller_v115.vpk">Direct Download Link</a></li>
+			<li><a href="https://github.com/TheOfficialFloW/Adrenaline/releases">Download (GitHub)</a></li>
 		</ul>
-	<li>Scroll down to "PSP Homebrew Browser"</li>
-	<li>Select it and install the application</li>
+		<li>Scroll down to "PSP Homebrew Browser"</li>
+		<li>Select it and install the application</li>
 		<ul>
 			<li><a href="https://github.com/ArkSource/psphbb/releases/download/v0.9b/PSPhbb.dev.vpk">Direct Download Link</a></li>
 		</ul>
-	<li>Open Adrenaline EasyInstaller</li>
-	<li>Select "3. Advanced Options"</li>
-	<li>Select "Install a small PSP Basegame if needed"</li>
-		<ul><li>Not required if you already have a PSP game installed</li></ul>
-	<li>Wait for it to finish and press X to reboot</li>
-	<li>Once you have rebooted, you should notice a new PSP game on your Home Menu. Do not open it, it won't work yet.</li>
-	<li>Open up Adrenaline EasyInstaller again</li>
-	<li>Select "1. Adrenaline eCustomFirmware"</li>
-	<li>Select "Install the latest Adrenaline eCFW release"</li>
-	<li>Select the PSP Basegame you just installed</li>
-		<ul><li>It should be "NPEZ00104 - BIGHEADSNOOKER"</li></ul>
-	<li>Confirm the installation and wait for it to finish. This will take a while.</li>
-	<li>Once it's finished, press X to reboot</li>
-	<li>Adrenaline should now be installed</li>
+		<li>Open Adrenaline</li>
+		<li>Press <b>X</b> to download the PSP 6.61 firmware</li>
+		<ul>
+			<li>This will take a while</li>
+			<li>The application will automatically close after it's finished</li>
+			<li>If you previously installed Adrenaline, move <b>ux0:adrenaline/661.PBP</b> to <b>ux0:app/PSPEMUCFW/</b></li>
+			<li>Afterwards, delete the <b>ux0:adrenaline</b> directory</li>
+		</ul>
+		<li>Open the application again</li>
+		<li>Press <b>X</b> to install the PSP 6.61 firmware</li>
+		<ul>
+			<li>This will take a while</li>
+		</ul>
+		<li>Press <b>X</b> to boot the PSP XMB</li>
+		<li>Setup the PSP</li>
+		<li>Hold the <b>PS</b> button and select <b>Settings</b></li>
+		<li>Select <b>Exit PspEmu Application</b></li>
+	</ol>
+<h3>Fixing Adrenaline Launching (optional)</h3>
+<p>Adrenaline v6 requires Adrenaline to be launched twice after reboot. If this bothers you, you can fix it</p>
+	<ol>
+		<li>
+			Open VitaShell and navigate to <b>ur0:tai/config.txt</b>
+		</li>
+		<ul>
+			<li>
+				If you have your config at <b>ux0</b>, move it to ur0
+			</li>
+		</ul>
+		<li>
+			Write the following changes:
+		</li>
+		<blockquote class="quote">
+			*KERNEL
+			<br>
+			ux0:app/PSPEMUCFW/sce_module/adrenaline_kernel.skprx
+		</blockquote>
+		<li>
+			Reboot and see if the changes have been made
+		</li>
 	</ol>
 <p class="quote">Install PSP Homebrew with the PSP Homebrew Browser<br>It can also be installed by being placed into the "ux0:pspemu/PSP/GAME" directory.<br>Place ISO game files in the "ux0:pspemu/ISO" directory.</p>
+<br>
 <footer><h2><a href="http://cfw.guide/" style="color:#E5E9F0;">🏠</a></h2></footer>
 </font>
 </body>
