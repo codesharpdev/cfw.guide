@@ -3,7 +3,6 @@
 <head>
 <title>DSiHax Guide</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -11,7 +10,7 @@
 			<h1 class="header" style="border-radius: 10px 0px 0px 10px">
 				<div align="left">
 					<a href="./" style="color:#E5E9F0;">
-						DSi Guide
+						DSi List
 					</a>
 				</div>
 			</h1>
@@ -35,116 +34,339 @@
 			</h1>
 		</div>
 	</div>
-	<center>
-		<h1 class="quote">
-			This guide requires you to have already installed a DSiWare exploit
-			<br>
-			<font size="+1">
-				If you do not have a DSiWare exploit installed, turn back now.
-			</font>
-		</h2>
-	</center>
-	<div class="redbg" align="centre" style="padding:10px";>
-		<h1 align="center">
-			FWTool
-		</h1>
-		<p align="center">
-			<font size = "+2">
-				Dumping Console ID, EMMC CID & NAND
-			</font>
-		</p>
-		<p align="center" style="padding:20px;">
-			<a href="fwtool" class="rcorners">
-				<b>
-					Get Started
-				</b>
-			</a>
-		</p>
+	<a name="TWLTool"/>
+	<div class="quote">
+	<h2>
+		<a href="#TWLTool">TWLTool</a>
+	</h2>
+	<p>
+		TWLTool is a hugely useful tool for DSi Hacking. It allows for:
+	</p>
+	<ul>
+		<li>NAND decryption/re-encryption</li>
+		<ul>
+			<li>Requires ConsoleID and EMMC CID</li>
+			<li>Allows for decryption and modification of DSi NAND</li>
+		</ul>
+		<li>SRL de/encryption</li>
+		<ul>
+			<li>Allows decryption of the DSi-specific regions of DSi-exclusive and enhanced games/titles</li>
+		</ul>
+		<li>boot2 decryption</li>
+		<ul>
+			<li>Outputs arm7.bin and arm9.bin directly from a DSi NAND image or from a TWL_Firm boot2 image</li>
+		</ul>
+	</ul>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/393488/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/attachments/50740/">
+						Download v1.6
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
 	</div>
-	<font size="+2">
-		<p>
-			<b>
-				What's FWTool?
-			</b>
-	</font>
-	<font size="+1">
-			<hr>
-			FWTool is a DSi Homebrew Application which we will use to dump our Console ID, EMMC CID and NAND
-		</p>
-	</font>
-	<font size="+2">
-		<p>
-			<b>
-				Woah, hold up, what's do all those words mean?
-			</b>
-	</font>
-	<font size="+1">
-			<hr>
-			Your <b>Console ID</b> and <b>EMMC CID</b> are going to be used for decrypting and re-encrypting various files throughout the guide. They're essentially the keys to your DSi.
-			<br>
-			Your <b>NAND</b> is your DSi's internal storage. With your Console ID and EMMC CID, we can decrypt and edit this to our heart's content. This includes installing DSiWare and downgrading System Titles.
-		</p>
-	</font>
-	<div class="orangebg" align="centre" style="padding:10px";>
-		<h1 align="center">
-			Downgrading
-		</h1>
-		<p align="center">
-			<font size = "+2">
-				Downgrade to any firmware version
-			</font>
-		</p>
-		<p align="center" style="padding:20px;">
-			<a href="downgrading" class="rcorners">
-				<b>
-					Get Started
-				</b>
-			</a>
-		</p>
+	<br>
+	<a name="DSi_Downgrading"/>
+	<div class="quote">
+	<h2>
+		<a href="#DSi_Downgrading">DSi Downgrading</a>
+	</h2>
+	<p>
+		User <a href="http://gbatemp.net/members/343962/" target="_blank">@Gadorach</a> created an excellent guide on GBAtemp, with a full guide of DSi downgrading, including:
+	</p>
+	<ul>
+		<li>Getting your DSi's ConsoleID</li>
+		<li>Getting your DSi's EMMC CID</li>
+		<li>Hardware NAND Modding</li>
+		<li>Decrypting your NAND</li>
+		<li>Title Downgrading</li>
+	</ul>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/393682/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		User <a href="http://gbatemp.net/members/388183/" target="_blank">@ThisIsDaAccount</a> created an equally great guide, explaining how to downgrade using softmods only, in a noob-friendly manner. Yes, this does require you to have an existing DSiWare exploit. The guide includes:
+	</p>
+	<ul>
+		<li>Getting your DSi's ConsoleID</li>
+		<li>Getting your DSi's EMMC CID</li>
+		<li>Decrypting your NAND</li>
+		<li>And more!</li>
+	</ul>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/481118/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
 	</div>
-	<font size="+2">
-		<p>
-			<b>
-				Why would you want to downgrade?
-			</b>
-	</font>
-	<font size="+1">
-			<hr>
-			Downgrading is actually pretty useful. I mean, for starters, to even <i>use</i> RocketLauncher and HiyaCFW, you need to be on 1.4. Remember, it only works on 1.4, so 1.4 is a pretty good firmware to be on.
-			<br>
-			Furthermore, if you want, you can downgrade certain titles such as the DS Card Whitelist on their own, so you can finally use those flashcards which were blocked from a system update.
-		</p>
-	</font>
-	<div class="greenbg" align="centre" style="padding:10px";>
-		<h1 align="center">
-			Installing DSiWare
-		</h1>
-		<p align="center">
-			<font size = "+2">
-				Download decrypted DSiWare and install them to your NAND
-			</font>
-		</p>
-		<p align="center" style="padding:20px;">
-			<a href="installing-dsiware" class="rcorners">
-				<b>
-					Get Started
-				</b>
-			</a>
-		</p>
+	<br>
+	<a name="tickCRYPT"/>
+	<div class="quote">
+	<h2>
+		<a href="#tickCRYPT">tickCRYPT</a>
+	</h2>
+	<p>
+		tickCRYPT is...basically a piracy tool. It allows you to decrypt another console's tickets, and re-encrypt them for another.
+		<br>
+		This means that we can transfer DSiWare titles from one hacked DSi to another one.
+	</p>
+	<p>
+		You will need:
+	</p>
+	<ul>
+		<li>The hacked DSi's:</li>
+		<ul>
+			<li>NAND Backup</li>
+			<li>Console ID</li>
+			<li>EMMC CID</li>
+		</ul>
+		<li>Your DSi's:</li>
+		<ul>
+			<li>Console ID</li>
+			<li>EMMC CID</li>
+		</ul>
+	</ul>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/482772/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/attachments/97349/">
+						Download v1.0
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
 	</div>
-	<font size="+2">
-		<p>
-			<b>
-				Can't you just install it from the DSi Shop?
-			</b>
-	</font>
-	<font size="+1">
-			<hr>
-			Unfortunately Nintendo closed down the DSi Shop on March 31st 2017. 
-			<br>
-			Also, certain titles such as <b>Sudoku</b> are good to have. People with hardmods may download Sudoku as an easy way to access homebrew.
-		</p>
-	</font>
+	<a name="TWLbf"/>
+	<br>
+	<div class="quote">
+	<h2>
+		<a href="#TWLbf">TWLbf</a>
+	</h2>
+	<p>
+		TWLbf is a tool which can bruteforce your DSi ConsoleID or EMMC CID. This is useful if you have one, but not the other
+	</p>
+	<p>
+		You will need either your DSi's ConsoleID or EMMC CID.
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/481732/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="https://github.com/Jimmy-Z/TWLbf/releases" target="_blank">
+						Download (GitHub)
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<a name="SRLoader"/>
+	<br>
+	<div class="quote">
+	<h2>
+		<a href="#SRLoader">SRLoader</a>
+	</h2>
+	<p>
+		SRLoader is a frontend for nds-bootstrap, for DSi. This means it can run commercial NDS games without a flashcard.
+	</p>
+	<p>
+		You will need a DSiWare exploit to run this, e.g. SudokuHax. You cannot load this with a Slot-1 game.
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/472200/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="https://github.com/Robz8/SRLoader/releases" target="_blank">
+						Download (GitHub)
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<a name="DSi_Downgrader"/>
+	<br>
+	<div class="quote">
+	<h2>
+		<a href="#DSi_Downgrader">DSi Downgrader</a>
+	</h2>
+	<p>
+		DSi Downgrader is a simple, easy to use script to allow for easier DSi Downgrading.
+	</p>
+	<p>
+		You will need a DSiWare exploit to run this, e.g. SudokuHax. You cannot load this with a Slot-1 game.
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/482243/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="https://gbatemp.net/attachments/97070/">
+						Download v2.1
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<a name="RocketLauncher"/>
+	<br>
+	<div class="quote">
+	<h2>
+		<a href="#RocketLauncher">RocketLauncher</a>
+	</h2>
+	<p>
+		RocketLauncher is a DSi exploit on the firmware version <b>1.4</b>. It will only ever work on 1.4. Firmwares below or above 1.4 do not work.
+		<br>
+		This is because on the version 1.4, Nintendo forgot to reimplement RSA checks on the DS card whitelist.
+	</p>
+	<p>
+		The exploit requires a flashcard with a flashable NAND, much like NTRBoot. A compatibility list will be released at a later date.
+		<br>
+		This requires an existing DSiWare exploit or a hardware mod to install. This includes downgrading and installing the modified DS card whitelist which is needed for RocketLauncher to work.
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/476288/" target="_blank">
+						Thread
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<a name="HiyaCFW"/>
+	<br>
+	<div class="quote">
+	<h2>
+		<a href="#HiyaCFW">HiyaCFW</a>
+	</h2>
+	<p>
+		HiyaCFW is the first CFW (Custom Firmware) for the DSi. It runs using RocketLauncher, meaning that only version <b>1.4</b> is compatible.
+		<br>
+		The custom firmware includes RSA and signature patchers, has a custom launcher, and is region-free. You will be able to install free DSiWare as well as custom applications and homebrew into the DSi Menu.
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="http://gbatemp.net/threads/478848/" target="_blank">
+						Discussion
+					</a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="files/arrow.png" alt=":arrow:" style="width:30px;height:30px;">
+				</th>
+				<th align="left">
+					<a href="https://github.com/shutterbug2000/hiyaCFW" target="_blank">
+						GitHub
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<br>
 	<footer>
 		<h2>
 			<a href="http://cfw.guide/" style="color:#E5E9F0;">

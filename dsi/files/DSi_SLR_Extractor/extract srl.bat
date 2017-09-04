@@ -1,1 +1,0 @@
-dsi_srl_extract.exe --basename=OUT %1
