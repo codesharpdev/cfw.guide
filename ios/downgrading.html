@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iOSHax Guide</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+<body class="guide">
+		<div id="wrapper">
+		<div id="first">
+		<h1 class="header" style="border-radius: 10px 10px 10px 10px">
+			<div align="left">
+				<a style="color:#E5E9F0;">
+					iOS Downgrading Guide
+				</a>
+			</div>
+		</h1>
+		</div>
+		</div>
+	<h2>
+		Downgrading to iOS 8.4.1 (32-bit only)
+	</h2>
+	<p>
+		Downgrade requires Jailbreak and Cydia already installed
+	</p>
+	<ol>
+		<li><b>Backup your iDevice through iTunes in case anything goes wrong</b></li>
+		<li>Download <a href="http://cydia.saurik.com/package/eu.heinelt.ifile/" type="_blank">iFile</a> from Cydia</li>
+		<li>Navigate to <b>/System/Library/CoreServices</b></li>
+		<li>Open <b>SystemVersion.plist</b></li>
+		<li>Change <b>ProductVersion</b> to <b>6.0</b></li>
+		<li>Change <b>ProductBuildVersion</b> to <b>10A406</b></li>
+		<li>Reboot your device</li>
+		<li>Go to <b>Settings > General > Software Update</b></li>
+		<li>Once <b>iOS 8.4.1</b> appears, select <b>Download and install</b></li>
+		<ul><li>If it doesn't, try again to see where you went wrong</li></ul>
+	</ol>
+	<h2>
+		Downgrading to iOS 6.1.3 (32-bit only)
+	</h2>
+	<p>
+		Downgrade requires Jailbreak and Cydia already installed
+		<br>
+		Beehind requires Windows
+	</p>
+	<ol>
+		<li><b>Backup your iDevice through iTunes; This will wipe your iPhone</b></li>
+		<li>Download and install <a href="https://cydia.saurik.com/package/openssh/" type="_blank">OpenSSH</a> from Cydia</li>
+		<li>Download and extract <a href="https://github.com/BlackGeekTutorial/Beehind/raw/master/Releases/beehindBETA_v0.5-1f02db583f13e8b103dfd7e50ff95ca1d356225a.zip">Beehind 0.5</a></li>
+		<li>Download the <b>6.1.3 IPSW</b> for your device from <a href="https://ipsw.me/" type="_blank">ipsw.me</a></li>
+		<li>Open Beehind as administrator</li>
+		<li>Under <b>Browse for the IPSW</b>, click <b>Choose</b> and select the IPSW you just downloaded</li>
+		<li>Click <b>Yes</b></li>
+		<li>Connect your iDevice to your computer and click <b>New Apple Device Found! Click here to get its ECID</b></li>
+		<li>Click <b>Yes</b></li>
+		<li>Check the <b>Jailbreak</b> and <b>Install Cydia</b> boxes if you want to jailbreak your iOS 6 install</li>
+		<li>Click <b>Build IPSW</b> and wait for it to finish</li>
+		<li>You will be redirected to the <b>DFU Pwner</b> page</li>
+		<ul>
+			<li>Make sure you installed OpenSSH via Cydia</li>
+			<li>Make sure your iDevice is still connected to your PC</li>
+		</ul>
+		<li>Click <b>Enter Pwned DFU Mode</b></li>
+		<ul>
+			<li>If Windows throws an error, find the iDevice's IP address through <b>Settings > Wifi</b></li>
+			<li>Click the <b>i</b> button next to your Wifi connection</li>
+			<li>Write the IP address down in the box in Beehind</li>
+			<li>Click <b>Enter Pwned DFU Mode</b> again</li>
+		</ul>
+		<li>You will be redirected to the <b>idevicerestore</b> page</li>
+		<li>Click <b>Restore</b></li>
+	</ol>
+	<p>Once it's finished, your device should now be on iOS 6.1.3!</p>
+	<footer>
+		<h2>
+			<a href="http://cfw.guide/" style="color:#E5E9F0;">
+				🏠
+			</a>
+		</h2>
+	</footer>
+</body>
+</html>
