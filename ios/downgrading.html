@@ -3,6 +3,7 @@
 	<head>
 		<title>iOSHax Guide</title>
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/table.css">
 	</head>
 <body class="guide">
 		<div id="wrapper">
@@ -32,29 +33,54 @@
 			<li><b>iPad mini</b> and <b>iPad 4</b> require <b>6.1</b></li>
 		</ul>
 		<li>Change <b>ProductBuildVersion</b> to one of the following</li>
-		<ul>
-			<li>10A403</li>
-			<ul>
-				<li>iPad 2</li>
-				<li>iPad 3</li>
-				<li>iPhone 4</li>
-				<li>iPhone 4S</li>
-				<li>iPod Touch (4th Gen)</li>
-			</ul>
-			<li>10A405</li>
-			<ul>
-				<li>iPhone 5</li>
-			</ul>
-			<li>10A406</li>
-			<ul>
-				<li>iPod Touch (5th Gen)</li>
-			</ul>
-			<li>10B141 (ProductVersion: 6.1)</li>
-			<ul>
-				<li>iPad 4</li>
-				<li>iPad mini</li>
-			</ul>
-		</ul>
+		<table class = "table" style="width: 50%; margin: 10px">
+			<colgroup>
+				<col span="1" style="width: 25%;">
+				<col span="1" style="width: 25%;">
+				<col span="1" style="width: 25%;">
+				<col span="1" style="width: 25%;">
+			</colgroup>
+			<thead>
+				<tr>
+						<th class = "table" style="text-align: center">10A403</th>
+						<th class = "table" style="text-align: center">10A405</th>
+						<th class = "table" style="text-align: center">10A406</th>
+						<th class = "table" style="text-align: center">10B141</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPad 2</td>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPhone 5</td>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPod Touch 5</td>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPad 4</td>
+				</tr>
+				<tr>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPad 3</td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPad mini 1</td>
+				</tr>
+				<tr>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPhone 4</td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+				</tr>
+				<tr>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPhone 4S</td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+				</tr>
+				<tr>
+					<td class = "table" style="text-align: center; font-weight: bold;">iPod Touch 4</td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+					<td class = "table" style="text-align: center; font-weight: bold;"></td>
+				</tr>
+			</tbody>
+		</table>
 		<li>Reboot your device</li>
 		<li>Go to <b>Settings > General > Software Update</b></li>
 		<li>Once <b>iOS 8.4.1</b> appears, select <b>Download and install</b></li>
