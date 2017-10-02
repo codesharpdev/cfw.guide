@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A complete PS Vita Hacking Guide, from stock to Ensō." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vita Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">Vita Guide</h1>
+          <h2 id="project_tagline">A complete PS Vita Hacking Guide, from stock to Ensō.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Introduction</h1>
+        <p>Before we'd start, I'd like to clear up a few questions you might have about Vita hacking. If you're confused about how or why people hack their Vitas, make sure to read this next bit.</p>
+
+        <h2>What is homebrew?</h2>
+
+        <p><a href="https://en.wikipedia.org/wiki/Homebrew_(video_games)" target="_blank">Homebrew</a> are games and other software which are not officially approved. For example, VitaDoom is a port of the classic game DOOM and mGBA lets you play Game Boy Advance ROMs. You can find more examples of Vita homebrew <a href="https://henkaku.xyz/showcase/" target="_blank">here</a>.</p>
+
+        <h2>What is HENkaku?</h2>
+
+        <p><a href="https://henkaku.xyz/" target="_blank">HENkaku</a> is the first ever homebrew enabler for PS Vita and PSTV. It is akin to jailbreaking your iPhone or rooting your Android device. Running homebrew on your Vita is 100% free using HENkaku. No cost, no ads, and no "donations". As long as you're on version 3.60 or below, you're good to go! If you paid for this software, you should ask for your money back.</p>
+
+        <h2>What can I do with HENkaku?</h2>
+
+        <p>HENkaku allows much more freedom than ever before possible with the PS Vita. It allows you to break free from the restrictions Sony set down such as:</p>
+		<ul>
+			<li>
+				Playing older games with emulators
+			</li>
+			<li>
+				Backing up your physical games and installing them to your memory card to play any time
+			</li>
+			<li>
+				Using a microSD card instead of Sony's expensive propriety memory cards
+			</li>
+			<li>
+				Installing homebrew titles and having them appear on your home menu
+			</li>
+		</ul>
+
+        <h2>What do I need to know before starting?</h2>
+        
+		<ul>
+			<li>
+				Using this kind of software does come with a risk. There's always be a chance that your Vita may become bricked (permanently unusable, as useful as a brick) while following this guide. We will not take responsibility for any damages caused by the software, however keep in mind that these bricks are extremely rare nowadays
+			</li>
+			<li>
+				Make sure to keep your device is charged before starting to avoid data loss or damage from an unexpected power-off
+			</li>
+			<li>
+				If you are using a Vita 1000, you must have a memory card
+			</li>
+			<li>
+				This guide will <b>not</b> work on versions 3.61 and above
+			</li>
+			<li>
+				There is <b>no</b> exploit for 3.61 and above available
+			</li>
+			<li>
+				<b>Do not</b> trust anyone who says they do
+			</li>
+		</ul>
+		
+		<center><button style="vertical-align:middle"><a style="color: #373737;font-weight:bold;" href="get-started"><span>Get Started </span></a></button></center>
+
+        <!--<h5>Headline 5</h5>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <h6>Headline 6</h6>
+
+        <p>Lorem ipsizzle funky fresh i'm in the shizzle boom shackalack, consectetizzle adipiscing my shizz. Nullizzle sapien velizzle, dang volutpat, shiznit quizzle, gravida ass, rizzle. Pot get down get down tortor. Sed erizzle. Black go to hizzle dolizzle dapibizzle turpis fo shizzle my nizzle yo. Maurizzle pellentesque nibh et check it out. Bow wow wow check it out tortizzle. Pellentesque for sure rhoncizzle bow wow wow. In owned habitasse brizzle dictumst. Nizzle dapibizzle. Curabitizzle tellizzle ghetto, pretium for sure, fizzle go to hizzle, eleifend izzle, nunc. Dope suscipizzle. Integizzle boom shackalack velit ass purus.</p>
+
+        <p>Roses are <em>emphasized</em></br>
+        Violets are <strong>strong</strong></p>
+
+        <h3>We all like making lists</h3>
+
+        <ul>
+          <li>Red Apples</li>
+          <li>Purple Grapes</li>
+          <li>Green Kiwifruits</li>
+        </ul>
+
+        <p>Let's get crazy:</p>
+
+        <ol>
+          <li>
+            <p>This is a list item with two paragraphs. Lorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+            mi posuere lectus.</p>
+
+            <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+            vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+            sit amet velit.</p>
+          </li>
+          <li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>
+        </ol>
+
+        <p>What about some code <strong>in</strong> a list? That's insane, right?</p>
+
+        <ol>
+          <li>
+            <p>In Ruby you can map like this:</p>
+              <code>['a', 'b'].map { |x| x.uppercase }</code>
+          </li>
+          <li>
+            <p>In Rails, you can do a shortcut:</p>
+              <code>['a', 'b'].map(&amp;:uppercase)</code>
+          </li>
+        </ol>
+
+        <p>Some people seem to like definition lists</p>
+
+        <dl>
+        <dt>Lower cost</dt>
+          <dd>The new version of this product costs significantly less than the previous one!</dd>
+          <dt>Easier to use</dt>
+          <dd>We've changed the product so that it's much easier to use!</dd>
+        </dl>
+
+        <h3>I am a robot</h3>
+
+        <p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
+<pre>
+def robot_invasion
+puts("robot " * 1000)
+end
+</pre>
+
+<p>How about we throw some angle braces and ampersands in there?</p>
+
+<pre><code>
+&lt;div class="footer"&gt;
+&amp;copy; 2013 Zorg Industries
+&lt;/div&gt;
+</code></pre>
+
+        <h3>If you need to blame someone, the best way to do so is by quoting them:</h3>
+
+        <blockquote>
+        <p>I, at any rate, am convinced that He does not throw dice.</p>
+        </blockquote>
+
+        <p>Or perhaps someone a little less eloquent:</p>
+
+        <blockquote>
+        <p>I wish you'd have given me this written question ahead of time so I
+        could plan for it... I'm sure something will pop into my head here in
+        the midst of this press conference, with all the pressure of trying to
+        come up with answer, but it hadn't yet...</p>
+
+        <p>I don't want to sound like
+        I have made no mistakes. I'm confident I have. I just haven't - you
+        just put me under the spot here, and maybe I'm not as quick on my feet
+        as I should be in coming up with one.</p>
+        </blockquote>
+
+        <h2>An octocat appears!</h2>
+        <img alt="an octocat!" src="http://octodex.github.com/images/octocat-de-los-muertos.jpg" />
+        <p>My favorite octocat, illustrated by <a href="https://github.com/cameronmcefee">@cameronmceffee</a>.</p>
+
+        <h2>Table for two</h2>
+
+        <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Rank</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Tom Preston-Werner</td>
+          <td>Awesome</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Albert Einstein</td>
+          <td>Nearly as awesome</td>
+        </tr>
+        </table>
+        
+      </section>-->
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
