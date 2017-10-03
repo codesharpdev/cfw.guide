@@ -50,12 +50,6 @@ button:hover {
     background-color: #bbb;
 }
 
-.button a {
-	text-decoration: none;
-	color: #373737;
-	font-weight:bold;
-}
-
 h1 {
   font-size: 36px;
   font-weight: 700;
