@@ -69,6 +69,7 @@ button:hover span {
 button:hover span:after {
   opacity: 1;
   right: 0;
+}
 
 h1 {
   font-size: 36px;
