@@ -46,15 +46,14 @@ button {
   margin: 5px;
 }
 
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
 button:hover {
     background-color: #bbb;
+}
+
+.button a {
+	text-decoration: none;
+	color: #373737;
+	font-weight:bold;
 }
 
 h1 {
