@@ -1,151 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>VitaHax Guide</title>
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="guide">
-	<div id="wrapper">
-	<div id="first">
-	<h1 class="header" style="border-radius: 10px 0px 0px 10px">
-		<div align="left">
-			<a href="./" style="color:#E5E9F0;font-weight:normal">
-				Vita Guide
-			</a>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A complete PS Vita Hacking Guide, from stock to Ensō." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vita Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="./" style="color:#fff">Vita Guide</a></h1>
+          <h2 id="project_tagline">A complete PS Vita Hacking Guide, from stock to Ensō.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="get-started">Guide</a></li>
+				<li><a href="installing-adrenaline">Adrenaline</a></li>
+				<li><a href="sd2vita" class="navbar active">SD2Vita</a></li>
+				<li><a href="usbmc">USBMC & PSVD</a></li>
+				<li><a href="help">Help!</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>SD2Vita</h1>
+        <p>SD2Vita is a microSD to gamecard adapter for the PS Vita. This means that you can finally use a microSD card as storage for your Vita! It requires a bit of settings up though.</p>
+		
+        <h2>Instructions</h2>
+		<ol>
+			<li>Download the <a href="https://github.com/xyzz/gamecard-microsd/releases/download/v1.0/gamesd.skprx">SD2Vita drivers</a></li>
+			<li>Download the <a href="http://cfw.guide/vita/files/zzBlank.img">zzBlank</a> .img file</li>
+			<li>Move your <code>ux0:tai</code> folder to <code>ur0:tai</code></li>
+			<li>Copy the SD2Vita drivers to <code>ur0:tai</code></li>
+			<li>Add the following to <code>ur0:tai/config.txt</code></li>
+			<pre>*KERNEL<br>ur0:tai/gamesd.skprx</pre>
+			<li>Put your microSD card into your computer</li>
+		</ol>
+		<input type="checkbox"  id="spoiler2" /> 
+		<label for="spoiler2">Windows</label>
+		<div class="spoiler">
+			<ol>
+				<li>Download the latest release of <a href="https://sourceforge.net/projects/win32diskimager/" target="_blank">Win32 Disk Imager</a></li>
+				<li>Open Win32 Disk Imager and select zzBlank.img from your computer</li>
+				<li>Select your microSD and click <b>Write</b></li>
+				<li>Take out your microSD card and put it back in again</li>
+				<li>Format your card from Windows</li>
+				<ul>
+					<li>File System: exFat</li>
+					<li>Allocation Unit Size: Default Allocation Size</li>
+					<li>Do not put a volume label</li>
+				</ul>
+				<li>Copy the backup you made earlier to the SD Card</li>
+				<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
+			</ol>
 		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="installing-adrenaline" style="color:#E5E9F0;font-weight:normal">
-				Adrenaline
-			</a>
+		<input type="checkbox"  id="spoiler" /> 
+		<label for="spoiler">Mac</label>
+		<div class="spoiler">
+			<ol>
+				<li>Go to <b>Disk Utility > Select Card > Partition > Options > MBR > 1 partition > exFAT</b></li>
+				<li>Copy the backup you made earlier to the SD Card</li>
+				<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
+			</ol>
 		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="sd2vita" style="color:#E5E9F0">
-				SD2Vita
-			</a>
+		<input type="checkbox"  id="spoiler3" /> 
+		<label for="spoiler3">Linux</label>
+		<div class="spoiler">
+			<ol>
+				<li>Find the whole-device node (usually /dev/sdx)</li>
+				<ul>
+					<li>If you're unsure, use the <code>mount</code> command</li>
+				</ul>
+				<li>Unmount all partitions, but don't eject the microSD</li>
+				<ul>
+					<li><code>umount /dev/sdx</code></li>
+				</ul>
+				<li>Use the <code>dd</code> command to write zzBlank.img to the card</li>
+				<ul>
+					<li><code>dd if=/path/zzBlank.img of=/dev/sdx</code></li>
+				</ul>
+				<li>Take out the micro SD card and put it in again</li>
+				<li>Create a new MBR (msdos) partition table, an exFAT partition, and format that partition</li>
+				<ul>
+					<li><code>mkfs.exfat /dev/sdx</code></li>
+				</ul>
+				<li>Copy the backup you made earlier to the SD Card</li>
+				<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
+			</ol>
 		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="usbmc" style="color:#E5E9F0;font-weight:normal">
-				USBMC
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="psvd" style="color:#E5E9F0;font-weight:normal !important">
-				PSVD
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px 10px 10px 0px;">
-		<div align="left">
-			<a href="https://discord.gg/zMQd5qz" target="_blank" style="color:#E5E9F0;font-weight:normal !important">
-				Help!
-			</a>
-		</div>
-	</h1>
-	</div>
-	</div>
-<h2>SD2Vita</h2>
-	<p>Use an Micro SD card instead of those expensive memory cards</p>
-<h3>For this guide, you will need:</h3>
-	<ul>
-	<li>A Computer</li>
-	<li>A Vita on FW 3.60</li>
-	<li><a href="https://github.com/xyzz/gamecard-microsd/releases/download/v1.0/gamesd.skprx">SD2Vita Drivers</a></li>
-	<li><a href="files/zzBlank.img">zzBlank.img file</a></li>
-	</ul>
-<h3>Instructions</h3>
-	<ol>
-	<li>Back up your PS Vita memory card via FTP or USB transfer</li>
-	<li>Move your <b>ux0:tai</b> folder to <b>ur0:tai</b></li>
-	<ul>
-		<li>Make sure that any plugins in the <b>tai</b> folder are edited to <b>ur0:</b> in the <b>config.txt</b> file</li>
-	</ul>
-	<li>Copy <b>gamesd.skprx</b> to <b>ur0:tai</b></li>
-	<li>Add the following to <b>ur0:tai/config.txt</b><br><blockquote class="quote">*KERNEL<br>ur0:tai/gamesd.skprx</blockquote></li>
-	<li>Put the microSD card into your computer</li>
-	<li>Follow these next steps with a Windows, Mac or Linux computer</li>
-	</ol>
-<div class="quote">
-<h3>Windows Instructions</h3>
-	<ol>
-	<li>Download <a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a></li>
-	<li>Open Win32 Disk Imager and select zzBlank.img from your computer</li>
-	<li>Select your microSD and click <b>Write</b></li>
-	<li>Take out your microSD card and put it back in again</li>
-	<li>Format your disk from Windows</li>
-	<ul>
-		<li>File System: exFAT</li>
-		<li>Allocation Unit Size: Default Allocation Size</li>
-		<li>Do not put a volume lable</li>
-	</ul>
-	<li>Copy the backup you made earlier to the SD Card</li>
-	<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
-	</ol>
-</div>
-<br>
-<div class="quote">
-<h3>Mac Instructions</h3>
-	<ol>
-	<li>Go to <b>Disk Utility > Select Card > Partition > Options > MBR > 1 partiton > exFAT</b></li>
-	<li>Copy the backup you made earlier to the SD Card</li>
-	<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
-	</ol>
-</div>
-<br>
-<div class="quote">
-<h3>Linux Instructions</h3>
-	<ol>
-	<li>Find the whole-device node (usually <b>/dev/sdx</b>)</li>
-	<ul>
-		<li>The <b>mount</b> command may be of help.</li>
-	</ul>
-	<li>Unmount all partitions, but don't eject the disk</li>
-	<ul>
-		<li><b>umount /dev/sdx</b></li>
-	</ul>
-	<li>Use the dd command to write zzBlank to the card</li>
-	<ul>
-		<li><b>dd if=/path/to/zzBlank.img of=/dev/what-you-found-above</b></li>
-	</ul>
-	<li>Take out the microSD card and put it back in again</li>
-	<li>Create a new MBR (msdos) partition table, an exFAT partition, and format that partition</li>
-	<ul>
-		<li><b>mkfs.exfat /dev/sdx</b></li>
-	</ul>
-	<li>Copy the backup you made earlier to the SD Card</li>
-	<li>Put the SD Card into the SD2Vita adapter and reboot your Vita</li>
-	</ol>
-</div>
-	<p>
-		Now, whenever HENkaku is launched, the SD card will automatically mount.
-		<br>
-		If you have 
-		<a href="installing-enso">
-			HENkaku Enso
-		</a>
-		installed, it will automatically mount on boot.
-	</p>
-<h2>Help</h2>
-	<p><b>Q: My SD2Vita adapter is stuck in my Vita! How do I get it out?</b><br>A: Use a toothpick or another thin object to gently pry it out.</p>
-	<p><b>Q: My SD2Vita adapter keeps popping out of my Vita! How do I get it in?</b><br>A: Apply a small bit of tape to the side of the adapter. This will give it the extra thickness it needs to stay in.</p>
-<footer><h2><a href="http://cfw.guide/" style="color:#E5E9F0;">🏠</a></h2></footer>
-</font>
-</body>
+
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
 </html>

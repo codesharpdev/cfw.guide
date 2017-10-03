@@ -5,6 +5,7 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="A complete PS Vita Hacking Guide, from stock to Ensō." />
+	<meta http-equiv="refresh" content="0; url=http://cfw.guide/vita/installing-henkaku" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -12,81 +13,5 @@
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-
-          <h1 id="project_title"><a href="./" style="color:#fff">Vita Guide</a></h1>
-          <h2 id="project_tagline">A complete PS Vita Hacking Guide, from stock to Ensō.</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>Installing HENkaku</h1>
-        <p>This part will guide you through installing HENkaku and custom homebrew software. The exploit will require you to relaunch the exploit on every reboot via the HENkaku website, but don't worry, we'll install a version which doesn't require this later.</p>
-		
-        <h2>Installing HENkaku</h2>
-		<ol>
-			<li>Open the Web Browser on your PS Vita</li>
-			<li>Go to <a href="https://henkaku.xyz/go" target="_blank">https://henkaku.xyz/go</a></li>
-		</ol>
-		<p>MolecularShell and HENkaku should now be installed on your Vita</p>
-		
-		<h2>Enabling Unsafe Homebrew</h2>
-		<p>This will allow us to access the Vita's internal memory and install homebrew which requires extended permissions. This can be dangerous and I recommend that beginners turn this off once they're finished with the guide.</p>
-		<ol>
-			<li>Open the Settings application</li>
-			<li>Select <b>HENkaku Settings</b></li>
-			<li>Check <b>Enable Unsafe Homebrew</b></li>
-		</ol>
-		
-		<h2>Enabling downloads</h2>
-		<p>The Vita's browser only lets us download certain types of files, such as audio and video files. Unfortunately, it won't normally let us download Vita homebrew files, but with the Download Enabler plugin, we can download any file we want!</p>
-		<ol>
-			<li>Open the Web Browser on your PS Vita and navigate to this page</li>
-			<li>Click the following link to download <a href="files/de3.mp4">Download Enabler v3</a> onto your Vita</li>
-			<li>Open MolecularShell and navigate to <b>ux0:video/XX</b></li>
-			<li>Rename <b>de3.mp4</b> to <b>de3.suprx</b></li>
-			<li>Press Triangle and copy the file</li>
-			<li>Navigate to <b>ur0:tai</b> and paste it there</li>
-			<li>Open <b>config.txt</b> and add the following text</li>
-			<blockquote>
-				*main
-				<br>
-				ur0:tai/de3.suprx
-			</blockquote>
-			<li>Exit and save changes</li>
-			<li>Navigate to the <b>ux0</b> partition and delete the <b>tai</b> folder</li>
-			<li>Reboot your console</li>
-		</ol>
-		
-		<h2>Installing Homebrew</h2>
-		<p>Now we've got that out the way, we can start to download some homebrew applications to put on our Home Menu</p>
-		<ol>
-			<li>Open the Web Browser on your PS Vita and navigate to this page</li>
-			<li>Download the latest release of <a href="https://github.com/TheOfficialFloW/VitaShell/releases/latest" target="_blank">VitaShell</a></li>
-			<li>Download the latest release of <a href="https://github.com/devnoname120/vhbb/releases/latest" target="_blank">Vita Homebrew Browser</a></li>
-			<li>Open MolecularShell and navigate to <b>ux0:download</b></li>
-			<li>Install both of the homebrew applications you just downloaded</li>
-			<ul>
-				<li>Make sure you still have unsafe homebrew enabled</li>
-			</ul>
-		</ol>
-		<p>You can now use VitaShell as your main file browser, and use Vita Homebrew Browser to download whatever homebrew you want. Keep in mind that <b>Unsafe Homebrew</b> must be enabled to run Vita Homebrew Browser.
-		
-		<center><button style="vertical-align:middle"><a style="color: #373737;font-weight:bold;" href="installing-enso"><span>Installing Ensō</span></a></button></center>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
-      </footer>
-    </div>
-
   </body>
 </html>
