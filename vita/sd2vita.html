@@ -42,10 +42,14 @@
 		<ol>
 			<li>Download the <a href="https://github.com/xyzz/gamecard-microsd/releases/download/v1.0/gamesd.skprx">SD2Vita drivers</a></li>
 			<li>Download the <a href="http://cfw.guide/vita/files/zzBlank.img">zzBlank</a> .img file</li>
-			<li>Move your <code>ux0:tai</code> folder to <code>ur0:tai</code></li>
+			<li>If you haven't already, move your <code>ux0:tai</code> folder to <code>ur0:tai</code> and delete the <code>ux0:tai</code></li>
 			<li>Copy the SD2Vita drivers to <code>ur0:tai</code></li>
 			<li>Add the following to <code>ur0:tai/config.txt</code></li>
 			<pre>*KERNEL<br>ur0:tai/gamesd.skprx</pre>
+			<li>Backup your Vita Memory Card to your computer via VitaShell using USB or FTP</li>
+			<ul>
+				<li>If you're using USB, make sure you have <a href="https://support.microsoft.com/en-gb/help/14201/windows-show-hidden-files" target="_blank">hidden files enabled</a> and <a href="https://kb.blackbaud.co.uk/articles/Article/41890" target="_blank">hidden operating system files enabled</a></li>
+			</ul>
 			<li>Put your microSD card into your computer</li>
 		</ol>
 		<input type="checkbox"  id="spoiler2" /> 
