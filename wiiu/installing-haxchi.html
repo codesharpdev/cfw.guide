@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A Wii U hacking guide, from stock to sysNAND CBHC." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+
+    <title>Wii U Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="../" style="color:#fff">Wii U Guide</a></h1>
+          <h2 id="project_tagline">A Wii U hacking guide, from stock to CBHC.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="get-started" class="navbar active">Guide</a></li>
+				<li><a href="blocking-updates">Blocking Updates</a></li>
+				<li><a href="help">Help</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Installing Haxchi</h1>
+        <p>Haxchi is a Wii U exploit which allows you to run Homebrew from your Wii U on versions 5.5.1 and 5.5.2 with an 100% success rate. It does not require you to have internet access. We will later use Haxchi to launch Wii U CFW on boot. We will also install the Homebrew Launcher and the Homebrew App Store, so you can download homebrew easily.</p>
+
+        <h2>Installing Haxchi</h2>
+
+        <ol>
+			<li>Download <a href="https://github.com/dimok789/homebrew_launcher/releases/download/1.4/homebrew_launcher.v1.4.zip">Homebrew Launcher v1.4</a></li>
+			<li>Download the latest release of <a href="https://github.com/FIX94/haxchi/releases/latest">Haxchi</a></li>
+			<li>Extract the contents of the Haxchi <code>.zip</code> to the root of your SD card</li>
+			<li>Extract the contents of the Homebrew Launcher <code>.zip</code> to the root of your SD card</li>
+			<li>Insert the SD card into your Wii U</li>
+			<li>Open the eShop and download one of <a href="http://www.wiiubru.com/go/haxchititles/" target="_blank">these games</a></li>
+			<ul>
+				<li>We recommend <b>Brain Age</b>, as it's the cheapest</li>
+				<li>A pirated copy won't work</li>
+				<li>If you own one of these games already, use that</li>
+				<li>If you're on 5.5.1 and don't want to update, use <a href="files/nnu-patcher.zip">nnu-patcher</a> to access the eShop</li>
+				<li>Make sure it's installed on your internal storage, not a USB</li>
+			</ul>
+			<li>Open up the Browser and navigate to <a href="http://cfw.guide/go" target="_blank">cfw.guide/go</a></li>
+			<li>Launch the Haxchi Installer</li>
+			<li>Select the DS virtual onsole title you want to install Haxchi on</li>
+			<li>Read the warning and then press <b>A</b> to install</li>
+			<li>Go back to the Home Menu and launch Haxchi</li>
+			<ul>
+				<li>If you can't see it or it doesn't work properly, try again</li>
+			</ul>
+		</ol>
+		<p>You should now reboot into a patched sysNAND</p>
+		
+		<h2>Installing Homebrew Titles</h2>
+		<ol>
+			<li>Download the latest release of the <a href="https://github.com/dimok789/homebrew_launcher/releases/latest" target="_blank">Homebrew Channel</a> (the channel <code>.zip</code> file)</li>
+			<li>Download <a href="http://wiiubru.com/appstore/zips/wup_installer_gx2.zip"> WUP Installer GX2</a></li>
+			<li>Download the <a href="http://www.wiiubru.com/appstore/chan_zips/wup_installer_gx2.zip"> WUP Installer GX2 Channel</a></li>
+			<li>Download <a href="https://github.com/vgmoose/hbas/releases/download/1.5/appstore15.zip">Homebrew App Store v1.5</a></li>
+			<li>Create a new folder in the root of your SD card named <code>install</code></li>
+			<li>Create a new folder in the <code>install</code> named <code>hbc</code></li>
+			<li>Extract the contents of the Homebrew App Store <code>.zip</code> to the <code>wiiu</code> folder on your SD card</li>
+			<li>Extract the contents of the WUP Installer GX2 <code>.zip</code> to the root of your SD card</li>
+			<li>Extract the contents of the Homebrew Channel <code>.zip</code> to the <code>install/hbc</code> folder on your SD card</li>
+			<li>Extract the <code>WUP_Installer_GX2</code> folder from the WUP Installer GX2 Channel <code>.zip</code> to the <code>install</code> folder on your SD card</li>
+			<li>Launch the Haxchi title again, but hold down <b>A</b> while launching it</li>
+			<li>Launch WUP Installer GX2</li>
+			<li>Select <b>Homebrew Channel > Install > Yes > NAND</b></li>
+			<li>Select <b>WUP Installer GX2 > Install > Yes > NAND</b></li>
+		</ol>
+		<p>You should now be able to launch the Homebrew Channel and WUP Installer GX2 from your Home Menu. You'll also be able to launch the Homebrew App Store from the Homebrew Channel to download whatever homebrew you want.</p>
+		
+		<center><a href="installing-cbhc" style="text-decoration: none;color: #373737;font-weight:bold;"><button style="vertical-align:middle"><span>Installing CBHC </span></button></a></center>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>

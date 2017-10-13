@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A Wii U hacking guide, from stock to sysNAND CBHC." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+
+    <title>Wii U Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="../" style="color:#fff">Wii U Guide</a></h1>
+          <h2 id="project_tagline">A Wii U hacking guide, from stock to CBHC.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="get-started" class="navbar active">Guide</a></li>
+				<li><a href="blocking-updates">Blocking Updates</a></li>
+				<li><a href="help">Help</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Installing CBHC</h1>
+        <p>Coldboot Haxchi (CBHC) is Haxchi, but automatically launched on boot. This means that whenever you turn on your Wii U, you'll automatically be launched into a patched sysNAND.</p>
+
+        <h2>Before we start</h2>
+
+        <ol>
+			<li>Make sure you have a working Haxchi installation</li>
+			<li>Make sure your Haxchi title is on the Wii U's System Memory</li>
+			<li>Make sure your Haxchi title was bought from the eShop</li>
+			<li>Make sure you have removed all USB devices before proceeding</li>
+			<li><b>Never</b> uninstall the CBHC title</li>
+			<li><b>Never</b> reinstall the game you used for your CBHC title</li>
+			<li><b>Never</b> move the CBHC title to a USB drive</li>
+			<li><b>Never</b> delete the account NNID which purchased the CBHC title</li>
+			<li><b>Never</b> format your Wii U while CBHC is installed</li>
+			<li><b>Failing to follow these instructions will result in a brick</b></li>
+		</ol>
+		
+		<h2>Instructions</h2>
+		
+		<ol>
+			<li>Download the latest release of <a href="https://github.com/FIX94/haxchi/releases/latest">Haxchi</a></li>
+			<li>Extract the contents of the CBHC <code>.zip</code> to the root of your SD card</li>
+			<li>Insert the SD card into your Wii U</li>
+			<li>Launch Haxchi</li>
+			<li>Launch the Homebrew Channel</li>
+			<li>Launch the CBHC installer</li>
+			<ul>
+				<li>Make sure you've read the <b>Before we start</b> section to avoid bricking</li>
+			</ul>
+			<li>Read the warning and then press <b>A</b> to install</li>
+			<li>Once finished, you'll be kicked back to the Home Menu</li>
+			<ul>
+				<li>
+					You can now reconnect any USB storage devices
+				</li>
+			</ul>
+			<li>Reboot your Wii U</li>
+			<li>Go down to <b>Autoboot: Disabled</b> and press <b>A</b> to enable autoboot</li>
+			<li>Select <b>Boot System Menu</b></li>
+			<li>Reboot again to make sure everything works correctly</li>
+			<ul>
+				<li>Optional: Move your CBHC title to somewhre where it won't annoy you</li>
+			</ul>
+		</ol>
+		<p>You're done! I highly recommend to start <a href="blocking-updates">blocking updates.</a></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>

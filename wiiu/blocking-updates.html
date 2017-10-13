@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A Wii U hacking guide, from stock to sysNAND CBHC." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+
+    <title>Wii U Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="../" style="color:#fff">Wii U Guide</a></h1>
+          <h2 id="project_tagline">A Wii U hacking guide, from stock to CBHC.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="get-started">Guide</a></li>
+				<li><a href="blocking-updates" class="navbar active">Blocking Updates</a></li>
+				<li><a href="help">Help</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Blocking Updates</h1>
+        <p>Your Wii U will automatically download and install updates when it's plugged in. This can be a problem, what if they push an update which patches an exploit? Then you'll be stuck on an unhackable firmware. Luckily for us, there's a way to get around that.</p>
+		<p>Previous update blocking methods disabled us from updating games, making update blocking a pain. This new method allows you to use the eShop and update your games while still being in the safety of your firwmare.</p>
+
+        <h2>Instructions</h2>
+
+        <ol>
+			<li>Download the latest release of <a href="https://www.wiiubru.com/appstore/zips/ftpiiu_everywhere.zip">FTPiiU_Everywhere</a></li>
+			<li>Download and install an FTP client of your choice</li>
+			<ul>
+				<li>For Windows, I recommend <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> or <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a></li>
+			</ul>
+			<li>Extract the contents of <code>ftpiiu_everywhere.zip</code> to the root of your SD card</li>
+			<li>Open FTPiiU_Everywhere from the Homebrew Launcher</li>
+			<li>Open your FTP client and connect to the IP address shown on your Wii U</li>
+			<li>Delete the folder <code>storage_mlc:sys/update</code></li>
+		</ol>
+		<p>Updating your system should now instantly fail</p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
