@@ -17,7 +17,7 @@ Theme Styles
 }
 
 body {
-  color:#373737;
+  color:#f2f2f2;
   background: #212121;
   font-size: 18px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -28,7 +28,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#f2f2f2;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -44,6 +44,8 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  background-color: #111;
+  color: #ccc;
 }
 
 button span {
@@ -109,7 +111,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #4d9ad6;
   text-shadow: none;
 }
 
@@ -154,8 +156,8 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #222;
-  background-color: #fff;
+  color: #ccc;
+  background-color: #464646;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
@@ -287,7 +289,7 @@ form {
 
 .alt_navbar li a {
     display: block;
-    color: #373737;
+    color: #000;
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
@@ -334,11 +336,11 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
+  background: #000;
 }
 
 #alt_header_wrap {
-  background: #fff;
+  background: #212121;
 }
 
 #header_wrap .inner {
@@ -361,7 +363,7 @@ Full-Width Styles
 }
 
 #alt_project_tagline {
-  color: #373737;
+  color: #000;
   font-size: 24px;
   font-weight: 300;
   background: none;
@@ -407,7 +409,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #212121;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -417,7 +419,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  background: #000;
 }
 
 /*******************************************************************************
@@ -500,7 +502,7 @@ input[id^="spoiler"] ~ .spoiler {
   opacity: 0;
   margin: 10px auto 0; 
   padding: 10px; 
-  background: #eee;
+  background: #111;
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: all .6s;
