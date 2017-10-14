@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A Wii U hacking guide, from stock to sysNAND CBHC." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+
+    <title>Wii U Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="../" style="color:#fff">Wii U Guide</a></h1>
+          <h2 id="project_tagline">A Wii U hacking guide, from stock to CBHC.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="get-started" class="navbar active">Guide</a></li>
+				<li><a href="blocking-updates">Blocking Updates</a></li>
+				<li><a href="help">Help</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>System Backup</h1>
+        <p>In case anything goes wrong, you'll want to back up your system NAND before installing CBHC. While optional, we <b>heavily recommend</b> that you do.</p>
+		<p>Note that if you have a 8GB/32GB Wii U, you'll need around 8GB/32GB of free space on your SD card respectively</p>
+
+        <h2>Instructions</h2>
+
+        <ol>
+			<li>Download the latest release of <a href="https://github.com/koolkdev/wiiu-nanddumper/releases" target="_blank">Wii U NAND Dumper</a></li>
+			<li>Extract the contents of the Wii U NAND Dumper <code>.zip</code> to the root of your SD card</li>
+			<li>Insert the SD card into your Wii U</li>
+			<li>Launch the Haxchi title while holding <b>A</b> to launch the Homebrew Launcher</li>
+			<li>Launch the Wii U Nand Dumper</li>
+			<li>Change all of the options on screen to <b>Yes</b></li>
+			<li>Press <b>A</b> to begin dumping</li>
+			<ul>
+				<li>The process may take up to 3 and a half hours for 32GB consoles</li>
+				<li>The process may take up to 1 hour for 8GB consoles</li>
+			</ul>
+		</ol>
+		<p>Thanks to Kafluke awaring me of this important step</p>
+		
+		<center><a href="installing-cbhc" style="text-decoration: none;color: #373737;font-weight:bold;"><button style="vertical-align:middle"><span>Installing CBHC </span></button></a></center>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
