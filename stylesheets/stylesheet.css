@@ -33,6 +33,24 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
 }
 
+.box {
+	border-radius:10px;
+	background-color:#111;
+	padding:10px;
+	padding-bottom:0.01em;
+}
+.box button {
+	background-color: #212121;
+}
+
+.border {
+	border: 3px solid #111;
+}
+
+.darkbutton button {
+	background-color: #111;
+}
+
 button {
   display: inline-block;
   border-radius: 4px;
@@ -239,6 +257,24 @@ td {
   padding: 10px;
   border: 1px solid #373737;
  }
+ 
+.notable td {
+  padding: 10px;
+  border: 0px;
+ }
+.notable th {
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
+  padding: 10px;
+  color: #fff;
+  font-weight:normal !important;
+  background: #212121 !important;
+}
+.notable table {
+  border: 0px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+ 
 
 form {
   background: #f2f2f2;
