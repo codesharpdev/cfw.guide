@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A complete PS Vita Hacking Guide, from stock to Ensō." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vita Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="./" style="color:#fff">Vita Guide</a></h1>
+          <h2 id="project_tagline">A complete PS Vita Homebrew Guide, from stock to Ensō.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="get-started">Guide</a></li>
+				<li><a href="installing-adrenaline" class="navbar active">Adrenaline</a></li>
+				<li><a href="sd2vita">SD2Vita</a></li>
+				<li><a href="usbmc">USBMC & PSVD</a></li>
+				<li><a href="faq">FAQ</a></li>
+				<li><a href="help">Help!</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Installing Adrenaline</h1>
+        <p>Adrenaline is an extremely useful piece of software which lets you run PS1 and PSP games and homebrew from your memory card.</p>
+		
+        <h2>Instructions</h2>
+		<ol>
+			<li>Download the latest release of <a href="https://github.com/TheOfficialFloW/Adrenaline/releases/latest" target="_blank">Adrenaline</a></li>
+			<li>Download the latest release of <a href="files/PSPhbb_dev.vpk">PSP Homebrew Browser</a></li>
+			<li>Install both files using a file manager such as VitaShell or MolecularShell</li>
+			<li>Open the Adrenaline application from the home menu</li>
+			<li>Press <b>X</b> to download the PSP 6.61 firmware</li>
+			<ul>
+				<li>Adrenaline will automatically close</li>
+			</ul>
+			<li>Open Adrenaline again and press <b>X</b> to install the firmware</li>
+			<li>Press <b>X</b> to boot the PSP XMB</li>
+			<li>Once you've set up the Vita, hold the <b>PS</b> button and select <b>Settings > Exit PspEmu Application</b></li>
+			<li>Open up VitaShell or MolecularShell and navigate to <code>ur0:tai</code></li>
+			<li>Open up <b>config.txt</b> and make the following changes</li>
+			<pre>*KERNEL<br>ux0:app/PSPEMUCFW/sce_module/adrenaline_kernel.skprx</pre>
+			<li>Reboot</li>
+		</ol>
+		<p>You now have a working PSP XMB on your Vita! You can play games by putting the ISOs into the <code>ux0:pspemu/PSP/ISO</code> directory, and install homebrew by putting it into the <code>ux0:pspemu/PSP/GAME</code> directory.</p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
