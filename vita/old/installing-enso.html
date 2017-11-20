@@ -1,78 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>VitaHax Guide</title>
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="guide">
-	<div id="wrapper">
-	<div id="first">
-	<h1 class="header" style="border-radius: 10px 0px 0px 10px">
-		<div align="left">
-			<a href="./" style="color:#E5E9F0;">
-				Vita Guide
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="installing-adrenaline" style="color:#E5E9F0;font-weight:normal !important">
-				Adrenaline
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="sd2vita" style="color:#E5E9F0;font-weight:normal !important">
-				SD2Vita
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="usbmc" style="color:#E5E9F0;font-weight:normal !important">
-				USBMC
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px;">
-		<div align="left">
-			<a href="psvd" style="color:#E5E9F0;font-weight:normal !important">
-				PSVD
-			</a>
-		</div>
-	</h1>
-	</div>
-	<div id="second">
-	<h1 class="header" style="border-radius: 0px 10px 10px 0px;">
-		<div align="left">
-			<a href="https://discord.gg/zMQd5qz" target="_blank" style="color:#E5E9F0;font-weight:normal !important">
-				Help!
-			</a>
-		</div>
-	</h1>
-	</div>
-	</div>
-<h2>Installing HENkaku Ensō</h2>
-	<p>This software will make PERMANENT modifications to your Vita. If anything goes wrong, there is NO RECOVERY (not even with a hardware flasher).<br>The creators provide this tool "as is", without warranty of any kind, express or implied and cannot be held liable for any damage done.<br>However, this is very unlikely to happen.</p>
-<h3>Instructions</h3>
-	<ol>
-	<li>Open the HENkaku Ensō app</li>
-	<li>Press Circle to accept terms</li>
-	<li>Press Cross to install the hack</li>
-	<ul><li>If it says "os0 modifications detected", press X to install the 3.60 PUP</li></ul>
-	<li>Install HENkaku Ensō</li>
-	</ol>
-<p>Proceed to <b><a href="finalising-setup">Finalising Setup</a></b></p>
-<footer><h2><a href="http://cfw.guide/" style="color:#E5E9F0;">🏠</a></h2></footer>
-</font>
-</body>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="A complete PS Vita Hacking Guide, from stock to Ensō." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vita Guide</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title"><a href="./" style="color:#fff">Vita Guide</a></h1>
+          <h2 id="project_tagline">A complete PS Vita Homebrew Guide, from stock to Ensō.</h2>
+			<div class="navbar">
+			  <ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="get-started" class="navbar active">Guide</a></li>
+				<li><a href="installing-adrenaline">Adrenaline</a></li>
+				<li><a href="sd2vita">SD2Vita</a></li>
+				<li><a href="usbmc">USBMC & PSVD</a></li>
+				<li><a href="faq">FAQ</a></li>
+				<li><a href="help">Help!</a></li>
+			  </ul>
+			</div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Installing Ensō</h1>
+        <p>
+			Regular HENkaku requires us to relaunch the exploit upon every reboot. This might not be hard, but it can get annoying. This is why we recommend installing Ensō.
+			<br>
+			HENkaku Ensō will automatically install HENkaku on boot, making it the best solution to PS Vita homebrew right now.
+		</p>
+		
+        <h2>Instructions</h2>
+		<ol>
+			<li>Open the Web Browser on your PS Vita and navigate to this page</li>
+			<li>Click the following link to download <a href="https://github.com/henkaku/enso/releases/download/v1.0/enso.vpk">HENkaku Ensō</a> onto your Vita</li>
+			<li>Open VitaShell and navigate to <code>ux0:download</code></li>
+			<li>Install <code>enso.vpk</code></li>
+			<li>Exit back to the home menu and open the Ensō application</li>
+			<li>Press <b>O</b> to accept terms</li>
+			<li>Press <b>X</b> to install Ensō</li>
+			<ul>
+				<li>If it says <b>os0 modifications detected</b>, press <b>X</b> to install the 3.60 PUP</li>
+			</ul>
+		</ol>
+		<p>You're done!</p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">© 2017 Emily<br>Slate theme maintained by <a href="https://github.com/jasoncostello" target="_blank">Jason Costello</a></p>
+      </footer>
+    </div>
+
+  </body>
 </html>
