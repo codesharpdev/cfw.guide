@@ -963,7 +963,7 @@ header {
       width: 35px;
       margin-right: 15px; }
   header .open-nav {
-    background-image: url(/images/menu.svg);
+    background-image: url(http://cfw.guide/vita/images/menu.svg);
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
