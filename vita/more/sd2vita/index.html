@@ -145,25 +145,25 @@ ur0:tai/gamesd.skprx</pre>
 <h2 id="linux">Linux</h2>
 
 <ol>
-  <li>Find the whole-device node (usually <code class="highlighter-rouge">/dev/sdx</code>)
+  <li>Find the whole-device node (usually <code class="highlighter-rouge">/dev/sdX</code>)
     <ul>
-      <li>If you’re unsure, use the <code class="highlighter-rouge">mount</code> command</li>
+      <li>If you’re unsure, use the <code class="highlighter-rouge">lsblk</code> command</li>
     </ul>
   </li>
   <li>Unmount all partitions, but don’t eject the microSD
     <ul>
-      <li><code class="highlighter-rouge">umount /dev/sdx</code></li>
+      <li><code class="highlighter-rouge">umount /dev/sdXN</code></li>
     </ul>
   </li>
   <li>Use the <code class="highlighter-rouge">dd</code> command to write <code class="highlighter-rouge">zzBlank.img</code> to the card
     <ul>
-      <li><code class="highlighter-rouge">dd if=/path/zzBlank.img of=/dev/sdx</code></li>
+      <li><code class="highlighter-rouge">dd if=/path/zzBlank.img of=/dev/sdx status=progress && sync</code></li>
     </ul>
   </li>
   <li>Take out the micro SD card and put it in again</li>
   <li>Create a new MBR (msdos) partition table, an exFAT partition, and format that partition
     <ul>
-      <li><code class="highlighter-rouge">mkfs.exfat /dev/sdx</code></li>
+      <li><code class="highlighter-rouge">mkfs.exfat /dev/sdXN</code></li>
     </ul>
   </li>
   <li>Copy the backup you made earlier to the SD Card</li>
