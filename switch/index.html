@@ -30,11 +30,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>What firmwares can I install Homebrew on?</h1>
+	<div style="border-radius: 10px; background-color: #333; background-position: left top; background-repeat: repeat; padding: 20px;"><center><h1>There will be homebrew soon</h1><h3 style="font-weight:normal;">Get on 3.0.0. Stay on 3.0.0.</h3><a href="blocking-updates" style="text-decoration: none;color: #373737;font-weight:bold;"><button style="vertical-align:middle; background-color:#444;"><span>Blocking Updates</span></button></a></center></div>
+        <h1>Can I install homebrew?</h1>
 			<p>
-				For the end user, you can't really do much yet. There's <a href="https://pegaswitch.com/" target="_blank">PegaSwitch</a>, but that's really meant for devs.
-				<br>
-				For the future, however, there has been a <b>major exploit</b> announced for firmware versions 1.0.0 to 3.0.0, dubbed smhax. This exploit gives full permissions to any service.
+				As an end user, not yet, however there has been a <b>major exploit</b> announced for firmware versions 1.0.0 to 3.0.0, dubbed <b>"smhax"</b>. This exploit gives full permissions to any service.
 			</p>
 
         <h2>What is smhax?</h2>
@@ -49,14 +48,12 @@
 				<blockquote>
 					Prior to 3.0.1, the service manager (sm) built-in system module treats a user as though it has full permissions if the user creates a new “sm:” port session but bypasses initialization. This is due to the other sm commands skipping the service ACL check for Pids <= 7 (i.e. all kernel bundled modules) and that skipping the initialization command leaves the Pid field uninitialized. Successful exploitation results in Acquisition, registering, and unregistering of arbitrary services
 					<br>
-					<a href="http://switchbrew.org/index.php?title=Switch_System_Flaws#FIRM-package_System_Modules" target="_blank">Source</a>
 				</blockquote>
+				<a href="http://switchbrew.org/index.php?title=Switch_System_Flaws#FIRM-package_System_Modules" target="_blank">Source</a>
 			</p>
 			<p>
 				When a homebrew entrypoint is found, smhax would likely be used to gain access to the whole console.
 			</p>
-		
-			<center><a href="blocking-updates" style="text-decoration: none;color: #373737;font-weight:bold;"><button style="vertical-align:middle"><span>Blocking Updates</span></button></a></center>
 
         <h2>I'm on 3.0.1 or above! Can I downgrade?</h2>
 
