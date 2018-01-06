@@ -18,7 +18,7 @@ Theme Styles
 
 body {
   color:#f2f2f2;
-  background: #111;
+  background: #1a1d24;
   font-size: 18px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -62,7 +62,7 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  background-color: #111;
+  background-color: #1a1d24;
   color: #ccc;
 }
 
@@ -175,7 +175,7 @@ p img {
 pre, code {
   width: 100%;
   color: #ccc;
-  background-color: #464646;
+  background-color: #1a1d24;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
@@ -241,7 +241,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  border: 3px solid #1a1d24;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -249,13 +249,13 @@ table {
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
+  background: #1a1d24;
   color: #fff;
  }
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: 2px solid #1a1d24;
  }
  
 .notable td {
@@ -372,11 +372,11 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #111;
+  background: #1a1d24;
 }
 
 #alt_header_wrap {
-  background: #212121;
+  background: #252a34;
 }
 
 #header_wrap .inner {
@@ -405,47 +405,8 @@ Full-Width Styles
   background: none;
 }
 
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-}
-
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
-}
-
-.tar_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
-}
-
-.tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
-}
-
 #main_content_wrap {
-  background: #212121;
+  background: #252a34;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -455,7 +416,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #111;
+  background: #1a1d24;
 }
 
 /*******************************************************************************
