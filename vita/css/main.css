@@ -9,7 +9,7 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  background-color: #111;
+  background-color: #1a1d24;
   color: #ccc; }
 
 button span {
@@ -834,7 +834,7 @@ pre, code, tt {
   border-radius: 2px;
   line-height: 1.4;
   font-weight: 400;
-  background-color: #404145;
+  background-color: #1a1d24;
   color: #FAFAFA;
   border-radius: 2px; }
 
@@ -862,19 +862,19 @@ p > code,
   white-space: nowrap; }
 
 table {
-  border: 1px solid #373737;
+  border: 3px solid #1a1d24;
   margin-bottom: 20px;
   text-align: left; }
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
+  background: #1a1d24;
   color: #fff; }
 
 td {
   padding: 10px;
-  border: 1px solid #373737; }
+  border: 2px solid #1a1d24; }
 
 input::-ms-clear,
 input::-ms-reveal {
@@ -914,13 +914,13 @@ body {
       body::after {
         left: 0;
         width: 300px;
-        background-color: #111; }
+        background-color: #1a1d24; }
       body #search-input, body::after {
         box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.1); }
       body::before {
         left: 300px;
         right: 0;
-        background-color: #212121; } }
+        background-color: #252a34; } }
 
 .main {
   margin-top: 80px; }
@@ -943,7 +943,7 @@ header {
     padding: 12.5px 20px;
     height: 60px;
     box-sizing: border-box;
-    background-color: #444;
+    background-color: #1a1d24;
     color: #fff;
     margin: 0;
     font-size: 1.7rem;
@@ -992,7 +992,7 @@ header {
 
 .content {
   position: relative;
-  background-color: #212121;
+  background-color: #252a34;
   color: #fff; }
   .content h3::before {
     content: "";
